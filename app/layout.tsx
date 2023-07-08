@@ -2,11 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-library.add(fab)
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

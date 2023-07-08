@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavBar() {
 	return (
@@ -8,8 +10,8 @@ export default function NavBar() {
 			<p>Projects</p>
 			<p>Blog</p>
 			<p>|</p>
-			<FontAwesomeIcon icon={['fab', 'linkedin']} width={24} />
-			<FontAwesomeIcon icon={['fab', 'square-github']} width={24} />
+			<FontAwesomeIcon className='cursor-pointer' icon={faLinkedin} size='xl' onClick={() => window.open('https://www.linkedin.com/in/je-zhou/')} />
+			<FontAwesomeIcon className='cursor-pointer' icon={faGithubSquare} size='xl' onClick={() => window.open('https://github.com/je-zhou')} />
 		</div>
 	)
 }

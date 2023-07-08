@@ -1,6 +1,7 @@
 import About from '@/components/About/About'
 import Intro from '@/components/Intro/Intro'
 import NavBar from '@/components/NavBar/NavBar'
+import Projects from '@/components/Projects/Projects'
 import Image from 'next/image'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			<div className='flex flex-col items-center'>
 				<Intro></Intro>
 				<About></About>
+				<Projects></Projects>
 			</div>
 
 		</main>
