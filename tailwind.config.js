@@ -7,6 +7,14 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			animation: {
+				wiggle: 'wheel 1.5s ease-in-out infinite',
+			},
+			keyframes: {
+				wheel: {
+					'100%': { transform: 'translateY(20px)', opacity: 0 },
+				}
+			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':

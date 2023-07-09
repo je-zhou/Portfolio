@@ -5,6 +5,7 @@ import Projects from '@/components/Projects/Projects'
 
 import Projects2021 from '@/components/Projects/2021/Projects2021'
 import Projects2022 from '@/components/Projects/2022/Projects2022'
+import Connect from '@/components/Connect/Connect'
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 				<Projects></Projects>
 				<Projects2022></Projects2022>
 				<Projects2021></Projects2021>
+				<Connect></Connect>
 			</div>
 
 		</main>
