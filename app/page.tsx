@@ -8,7 +8,7 @@ import Projects2022 from '@/components/Projects/2022/Projects2022'
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center bg-charade">
+		<main className="flex min-h-screen max-w-full flex-col items-center bg-charade">
 			<NavBar></NavBar>
 			<div className='flex flex-col items-center snap-y'>
 				<Intro></Intro>

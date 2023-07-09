@@ -14,11 +14,11 @@ export default function AnimateImage({ imageURL, className }: AnimateImageProps)
 		offset: ["start end", "end start"]
 	});
 
-	const opacity = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
+	const opacity = useTransform(scrollYProgress, [0, 1], ["80%", "100%"])
 
 	return (
 		<motion.div ref={ref} className={className + ' ' + 'flex items-center justify-center h-full'} style={{ opacity }}>
-			<Image className='h-auto w-2/5 py-24' src={imageURL} width={1000000} height={1000000} alt={imageURL} >
+			<Image className='h-auto w-3/5 2xl:w-1/3 py-12' src={imageURL} width={1000000} height={1000000} alt={imageURL} >
 			</Image >
 		</motion.div >
 	)
