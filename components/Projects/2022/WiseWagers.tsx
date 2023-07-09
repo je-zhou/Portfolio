@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import ProjectTile from '../ProjectTile'
-import AnimateImage from '../AnimateImage'
+import ProjectTile from '../shared/ProjectTile'
+import AnimateImage from '../shared/AnimateImage'
 
 export default function WiseWagers() {
 	return (
@@ -27,7 +27,8 @@ export default function WiseWagers() {
 				/>
 				<AnimateImage
 					imageURL='/projects/lynk/Lynk - 3.png'
-				/>			</div>
+				/>
+			</div>
 		</div>
 	)
 }

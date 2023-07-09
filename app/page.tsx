@@ -2,10 +2,9 @@ import About from '@/components/About/About'
 import Intro from '@/components/Intro/Intro'
 import NavBar from '@/components/NavBar/NavBar'
 import Projects from '@/components/Projects/Projects'
-import Lynk from '@/components/Projects/projects/Lynk'
-import MyCryptoPocket from '@/components/Projects/projects/MyCryptoPocket'
-import WiseWagers from '@/components/Projects/projects/WiseWagers'
-import Image from 'next/image'
+
+import Projects2021 from '@/components/Projects/2021/Projects2021'
+import Projects2022 from '@/components/Projects/2022/Projects2022'
 
 export default function Home() {
 	return (
@@ -15,9 +14,8 @@ export default function Home() {
 				<Intro></Intro>
 				<About></About>
 				<Projects></Projects>
-				<WiseWagers></WiseWagers>
-				<Lynk></Lynk>
-				<MyCryptoPocket></MyCryptoPocket>
+				<Projects2022></Projects2022>
+				<Projects2021></Projects2021>
 			</div>
 
 		</main>

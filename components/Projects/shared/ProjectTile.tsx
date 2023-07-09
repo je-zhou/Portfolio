@@ -29,6 +29,8 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 	useEffect(() => {
 		if (isInView) {
 			controls.start("visible")
+		} else {
+			controls.set("hidden")
 		}
 	})
 
@@ -36,12 +38,12 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 		<motion.div
 			className={className}
 			variants={{
-				hidden: { opacity: 0, y: 75 },
+				hidden: { opacity: 0, y: 100 },
 				visible: { opacity: 1, y: 0 },
 			}}
 			initial="hidden"
 			animate={controls}
-			transition={{ duration: 0.5, delay: 0.25 }}
+			transition={{ duration: 0.75, delay: 0.25 }}
 		>
 			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-xl'>
 				{/* Title and Logo */}
