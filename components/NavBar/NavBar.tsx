@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavBar() {
 	return (
-		<div className='flex flex-row space-x-8 text-md min-w-full font-bold opacity-80 justify-end p-8'>
+		<div className='flex flex-row space-x-8 text-md min-w-full font-bold opacity-80 justify-end p-8 text-charade dark:text-white'>
 			<p className='cursor-pointer' >About Me</p>
 			<p className='cursor-pointer' >Projects</p>
 			<p className='cursor-pointer' >Blog</p>

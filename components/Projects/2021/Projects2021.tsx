@@ -8,7 +8,7 @@ export default function Projects2021() {
 			<div className='flex flex-1 flex-col w-full items-end'>
 				<MyCryptoPocket></MyCryptoPocket>
 			</div>
-			<div className='md:sticky py-4 lg:pt-24 top-0 text-4xl lg:text-[3vw] font-bold underline w-full lg:w-fit text-center'>2021</div>
+			<div className='md:sticky py-4 lg:pt-24 top-0 text-4xl lg:text-[3vw] font-bold underline w-full lg:w-fit text-center text-charade'>2021</div>
 		</div>
 	)
 }

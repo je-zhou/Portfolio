@@ -5,6 +5,7 @@ module.exports = {
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
+	darkMode: "class",
 	theme: {
 		extend: {
 			animation: {
@@ -27,6 +28,7 @@ module.exports = {
 				'heather': '#BFCCD7',
 				'wild blue yonder': '#7F9CB7',
 				'hoki': '#6782A3',
+				'light-background': '#F2F8FE',
 			},
 		},
 

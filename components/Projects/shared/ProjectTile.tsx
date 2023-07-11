@@ -48,7 +48,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md'>
 				{/* Title and Logo */}
 				<div className='flex flex-row items-center space-x-2'>
-					<div className='w-8 h-8 bg-white rounded-md relative flex items-center justify-center'>
+					<div className='w-8 h-8 bg-white border rounded-md relative flex items-center justify-center shadow-sm'>
 						<div className='w-6 h-6 relative'>
 							<Image
 								src={logoUrl}
@@ -57,33 +57,33 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 							></Image>
 						</div>
 					</div>
-					<h4 className='text-xl font-bold'>{name}</h4>
+					<h4 className='text-xl font-bold text-charade dark:text-white'>{name}</h4>
 				</div>
 				{/* Tags */}
 				<div className='flex flex-row space-x-2'>
 					{tags.map((tag) => {
 						return (
-							<div key={tag} className='px-2 py-1 border border-heather rounded-md bg-slate-600 text-heather font-bold'>
+							<div key={tag} className='px-2 py-1 border border-heather rounded-md bg-slate-200 text-slate-600 dark:bg-slate-600 dark:text-heather font-bold'>
 								{tag}
 							</div>
 						)
 					})}
 				</div>
 				{/* Description */}
-				<p className='font-light text-heather text-lg'>
+				<p className='font-light text-charade dark:text-heather text-lg'>
 					{description}
 				</p>
 				{/* Find out more */}
 				<div className='flex flex-row items-center justify-center space-x-2 cursor-pointer'>
-					<p className='font-bold text-lg'>Find out more</p>
-					<FontAwesomeIcon icon={faArrowRight} color='#FFFFFF' />
+					<p className='font-bold text-lg text-charade dark:text-white'>Find out more</p>
+					<FontAwesomeIcon className='text-charade dark:text-white' icon={faArrowRight} />
 				</div>
 				{/* Links */}
-				<div className='flex flex-row space-x-4 items-center'>
-					{websiteUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faArrowUpRightFromSquare} size='lg' color='#C2CCD6' onClick={() => window.open(websiteUrl)} /> : null}
-					{githubUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faGithubSquare} size='xl' color='#C2CCD6' onClick={() => window.open(githubUrl)} /> : null}
-					{playStoreUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faGooglePlay} size='xl' color='#C2CCD6' onClick={() => window.open(playStoreUrl)} /> : null}
-					{appStoreUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faAppStore} size='xl' color='#C2CCD6' onClick={() => window.open(appStoreUrl)} /> : null}
+				<div className='flex flex-row space-x-4 items-center text-neutral-400 dark:text-heather'>
+					{websiteUrl != undefined ? <FontAwesomeIcon className='cursor-pointer ' icon={faArrowUpRightFromSquare} size='lg' onClick={() => window.open(websiteUrl)} /> : null}
+					{githubUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faGithubSquare} size='xl' onClick={() => window.open(githubUrl)} /> : null}
+					{playStoreUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faGooglePlay} size='xl' onClick={() => window.open(playStoreUrl)} /> : null}
+					{appStoreUrl != undefined ? <FontAwesomeIcon className='cursor-pointer' icon={faAppStore} size='xl' onClick={() => window.open(appStoreUrl)} /> : null}
 				</div>
 			</div>
 		</motion.div >
