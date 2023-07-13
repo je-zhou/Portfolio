@@ -101,7 +101,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 					</div>
 				</div>
 				{/* Avatar */}
-				<div className='w-full flex flex-row justify-center relative'>
+				<div className='w-full flex flex-row justify-center relative top-8'>
 					<AnimatePresence>
 						{
 							darkMode && (
