@@ -27,12 +27,20 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 	const controls = useAnimation()
 
 	useEffect(() => {
-		if (isInView) {
-			controls.start("visible")
+		const width = window.innerWidth;
+
+		if (width < 1024) {
+			controls.set("visible")
 		} else {
-			controls.set("hidden")
+			if (isInView) {
+				controls.start("visible")
+			} else {
+				controls.set("hidden")
+			}
 		}
 	})
+
+
 
 	return (
 		<motion.div
