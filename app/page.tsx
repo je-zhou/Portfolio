@@ -7,7 +7,7 @@ import Projects from '@/components/Projects/Projects'
 import Projects2021 from '@/components/Projects/2021/Projects2021'
 import Projects2022 from '@/components/Projects/2022/Projects2022'
 import Connect from '@/components/Connect/Connect'
-import { useEffect, useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function Home() {
 	const currentHour = new Date().getHours();

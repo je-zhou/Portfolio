@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { MutableRefObject } from 'react'
 
 export default function About() {
 	return (
-		<div className='flex flex-col justify-center w-full max-w-4xl h-screen p-12 snap-start'>
+		<div id='About' className='flex flex-col justify-center w-full max-w-4xl h-screen p-12 snap-start'>
 			<div className='flex flex-col space-y-16 j items-center mb-72'>
 				<h1 className='text-6xl md:text-8xl font-bold text-charade dark:text-white'>About Me</h1>
 				<p className='text-xl font-light text-charade dark:text-heather text-center md:text-left'>
