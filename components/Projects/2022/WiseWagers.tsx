@@ -17,16 +17,15 @@ export default function WiseWagers() {
 			></ProjectTile>
 			<div className='flex-1 flex-col h-full w-full hidden lg:flex'>
 				<AnimateImage
-					imageURL='/projects/lynk/Lynk - 1.png'
+					imageURL='/projects/wisewagers/WiseWagers - 1.png'
+					horizontal={true}
 				/>
 				<AnimateImage
-					imageURL='/projects/lynk/Lynk - 4.png'
+					imageURL='/projects/wisewagers/WiseWagers - 2.png'
+					horizontal={true}
 				/>
 				<AnimateImage
-					imageURL='/projects/lynk/Lynk - 2.png'
-				/>
-				<AnimateImage
-					imageURL='/projects/lynk/Lynk - 3.png'
+					imageURL='/projects/wisewagers/WiseWagers - 3.png'
 				/>
 			</div>
 		</div>

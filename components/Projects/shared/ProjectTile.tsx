@@ -82,10 +82,10 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 					{description}
 				</p>
 				{/* Find out more */}
-				<div className='flex flex-row items-center justify-center space-x-2 cursor-pointer'>
+				{/* <div className='flex flex-row items-center justify-center space-x-2 cursor-pointer'>
 					<p className='font-bold text-lg text-charade dark:text-white'>Find out more</p>
 					<FontAwesomeIcon className='text-charade dark:text-white' icon={faArrowRight} />
-				</div>
+				</div> */}
 				{/* Links */}
 				<div className='flex flex-row space-x-4 items-center text-neutral-400 dark:text-heather'>
 					{websiteUrl != undefined ? <FontAwesomeIcon className='cursor-pointer ' icon={faArrowUpRightFromSquare} size='lg' onClick={() => window.open(websiteUrl)} /> : null}
