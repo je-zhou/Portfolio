@@ -53,7 +53,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 			animate={controls}
 			transition={{ duration: 0.75, delay: 0.25 }}
 		>
-			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md'>
+			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md  md:max-w-md'>
 				{/* Title and Logo */}
 				<div className='flex flex-row items-center space-x-2'>
 					<div className='w-8 h-8 bg-white border rounded-md relative flex items-center justify-center shadow-sm'>
@@ -71,7 +71,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 				<div className='flex flex-row space-x-2'>
 					{tags.map((tag) => {
 						return (
-							<div key={tag} className='px-2 py-1 border border-heather rounded-md bg-slate-200 text-slate-600 dark:bg-slate-600 dark:text-heather font-bold'>
+							<div key={tag} className='px-2 py-1 border text-xs sm:text-base border-heather rounded-md bg-slate-200 text-slate-600 dark:bg-slate-600 dark:text-heather font-bold'>
 								{tag}
 							</div>
 						)

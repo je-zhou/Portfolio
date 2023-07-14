@@ -9,7 +9,7 @@ export default function Projects2022() {
 				<WiseWagers></WiseWagers>
 				<Lynk></Lynk>
 			</div>
-			<div className='md:sticky py-4 lg:pt-24 top-0 text-4xl lg:text-[3vw] font-bold underline w-full lg:w-fit text-center text-charade dark:text-white'>2022</div>
+			<div className='hidden md:sticky py-4 lg:pt-24 top-0 text-4xl lg:text-[3vw] font-bold underline w-full lg:w-fit px-4 text-charade dark:text-white'>2022</div>
 		</div>
 	)
 }
