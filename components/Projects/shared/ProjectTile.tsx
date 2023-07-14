@@ -53,7 +53,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 			animate={controls}
 			transition={{ duration: 0.75, delay: 0.25 }}
 		>
-			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md  md:max-w-md'>
+			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md md:max-w-md py-4'>
 				{/* Title and Logo */}
 				<div className='flex flex-row items-center space-x-2'>
 					<div className='w-8 h-8 bg-white border rounded-md relative flex items-center justify-center shadow-sm'>
