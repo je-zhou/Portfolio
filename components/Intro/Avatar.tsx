@@ -155,7 +155,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 					></FlipUp>
 
 				</div>
-				<p className='text-charade dark:text-heather xl:text-2xl'> {darkMode ? 'Developer/Gamer/Forex Trader' : 'Global Tax Consultant'}</p>
+				<p className='text-charade dark:text-heather xl:text-2xl'> {darkMode ? 'Designer & Developer' : 'Global Tax Consultant'}</p>
 			</div>
 		</div >
 
