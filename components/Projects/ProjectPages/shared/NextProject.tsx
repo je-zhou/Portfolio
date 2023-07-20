@@ -41,7 +41,7 @@ export default function NextProject({ url, text }: NextProjectProps) {
 		>
 			<Link href={url} ref={ref}>
 				<div className='bg-white/80 hover:bg-white/100 duration-200 cursor-pointer m-8 p-4 px-8 rounded-full shadow-lg'>
-					<div className='flex flex-row space-x-2 items-center text-charade text-lg'>
+					<div className='flex flex-row space-x-2 items-center text-charade text-sm md:text-lg'>
 						<p>{`Next Project: ${text}`}</p>
 						<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
 					</div>
