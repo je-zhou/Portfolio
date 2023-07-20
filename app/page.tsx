@@ -7,14 +7,18 @@ import Projects from '@/components/Projects/Projects'
 import Projects2021 from '@/components/Projects/2021/Projects2021'
 import Projects2022 from '@/components/Projects/2022/Projects2022'
 import Connect from '@/components/Connect/Connect'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
+import { useThemeContext } from '@/components/ThemeProvider/ThemeProvider'
 
 export default function Home() {
-	const currentHour = new Date().getHours();
-	const [darkMode, setDarkMode] = useState<boolean>(currentHour > 17 || currentHour < 9);
+	let theme = useThemeContext();
+
+	const [darkMode, setDarkMode] = useState<boolean>(theme === "light" ? false : true);
 
 	const toggleDarkMode = () => {
 		setDarkMode(!darkMode);
+		theme = darkMode ? "dark" : "light"
+		console.log(theme)
 	};
 
 	return (
@@ -30,8 +34,6 @@ export default function Home() {
 					<Connect></Connect>
 				</div>
 			</div>
-
-
 		</main >
 	)
 }

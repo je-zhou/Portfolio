@@ -11,6 +11,7 @@ export default function WiseWagers() {
 				className='sticky top-16 lg:top-0 py-4 lg:pt-24'
 				logoUrl='/project-logos/WiseWagers - Light.png'
 				name='WiseWagers'
+				href='/wisewagers'
 				tags={['Typescript', 'NextJS', 'AWS/Azure']}
 				description='A SaaS offering that web scrapes odd from Australia’s biggest bookmakers and runs sports betting algorithms to identify mathematically profitable bets.'
 				websiteUrl='https://wisewagers.com.au/'

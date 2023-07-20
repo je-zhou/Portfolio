@@ -10,6 +10,7 @@ export default function Lynk() {
 				className='sticky top-16 lg:top-0 py-4 lg:pt-24'
 				logoUrl='/project-logos/Lynk - Light.png'
 				name='Lynk'
+				href='/lynk'
 				tags={['Flutter', 'Hackathon']}
 				description='A mobile app helping students and graduates connect and find opportunities in their local communities. Awarded 1st place @ GovHack 2022.'
 				githubUrl='https://github.com/je-zhou/Lynk'

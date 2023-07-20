@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core';
+import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +22,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<ThemeProvider>{children}</ThemeProvider>
+			</body>
 		</html>
 	)
 }

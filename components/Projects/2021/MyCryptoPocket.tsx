@@ -10,6 +10,7 @@ export default function MyCryptoPocket() {
 				className='sticky top-16 lg:top-0 py-4 lg:pt-24'
 				logoUrl='/project-logos/MyCryptoPocket - Light.png'
 				name='My Crypto Pocket'
+				href='/mycryptopocket'
 				tags={['Flutter', 'Firebase', 'CodeMagic']}
 				description='A mobile app to track the performance of digital assets across multiple exchanges'
 				playStoreUrl=''

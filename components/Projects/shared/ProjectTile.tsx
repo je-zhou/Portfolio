@@ -6,12 +6,15 @@ import { faGooglePlay, faGithubSquare, faAppStore } from '@fortawesome/free-bran
 import { faArrowUpRightFromSquare, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import { motion, useInView, useAnimation } from "framer-motion"
+import TagTile from './TagTile';
+import Link from 'next/link';
 
 interface ProjectTileProps {
 	logoUrl: string
 	name: string
 	tags: Array<string>
 	description: string
+	href: string
 	githubUrl?: string | undefined
 	websiteUrl?: string | undefined
 	playStoreUrl?: string | undefined
@@ -20,7 +23,7 @@ interface ProjectTileProps {
 
 }
 
-export default function ProjectTile({ logoUrl, name, tags, description, githubUrl, websiteUrl, playStoreUrl, appStoreUrl, className }: ProjectTileProps) {
+export default function ProjectTile({ logoUrl, name, tags, description, href, githubUrl, websiteUrl, playStoreUrl, appStoreUrl, className }: ProjectTileProps) {
 
 	const ref = useRef(null);
 	const isInView = useInView(ref)
@@ -40,8 +43,6 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 		}
 	})
 
-
-
 	return (
 		<motion.div
 			className={className}
@@ -51,7 +52,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 			}}
 			initial="hidden"
 			animate={controls}
-			transition={{ duration: 0.75, delay: 0.25 }}
+			transition={{ duration: 0.5, delay: 0.2 }}
 		>
 			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md md:max-w-md py-4 md:py-0'>
 				{/* Title and Logo */}
@@ -71,9 +72,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 				<div className='flex flex-row space-x-2'>
 					{tags.map((tag) => {
 						return (
-							<div key={tag} className='px-2 py-1 border text-xs sm:text-base border-heather rounded-md bg-slate-200 text-slate-600 dark:bg-slate-600 dark:text-heather font-bold'>
-								{tag}
-							</div>
+							<TagTile key={tag} tag={tag}></TagTile>
 						)
 					})}
 				</div>
@@ -82,10 +81,10 @@ export default function ProjectTile({ logoUrl, name, tags, description, githubUr
 					{description}
 				</p>
 				{/* Find out more */}
-				{/* <div className='flex flex-row items-center justify-center space-x-2 cursor-pointer'>
+				<Link href={href} className='flex flex-row items-center justify-center space-x-2 cursor-pointer'>
 					<p className='font-bold text-lg text-charade dark:text-white'>Find out more</p>
 					<FontAwesomeIcon className='text-charade dark:text-white' icon={faArrowRight} />
-				</div> */}
+				</Link>
 				{/* Links */}
 				<div className='flex flex-row space-x-4 items-center text-neutral-400 dark:text-heather'>
 					{websiteUrl != undefined ? <FontAwesomeIcon className='cursor-pointer ' icon={faArrowUpRightFromSquare} size='lg' onClick={() => window.open(websiteUrl)} /> : null}
