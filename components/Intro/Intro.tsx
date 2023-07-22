@@ -16,14 +16,14 @@ export default function Intro({ toggleDarkMode, darkMode }: IntroProps) {
 						<p className='text-xl lg:text-4xl text-charade dark:text-heather text-center'>Hello! My Name is</p>
 						<h1 className=' text-4xl md:text-7xl xl:text-9xl font-bold text-charade dark:text-white text-center md:text-left'>Jerry Zhou</h1>
 					</div>
-					<div className='border border-charade dark:border-heather hover:bg-charade hover:dark:bg-heather p-2 md:p-4 rounded-xl w-fit mb-8 mt-8 hover:cursor-pointer text-charade hover:text-white dark:text-white  hover:dark:text-charade'
+					<div className='border border-charade dark:border-heather hover:bg-charade hover:dark:bg-heather p-1 md:p-2 rounded-xl w-fit mb-8 mt-8 hover:cursor-pointer text-charade hover:text-white dark:text-white  hover:dark:text-charade'
 						onClick={() => {
 							const ele = document.getElementById("Projects")
 							if (ele) {
 								ele.scrollIntoView({ behavior: 'smooth' })
 							}
 						}}>
-						<p className='text-xl lg:text-2xl text-center px-1 md:px-4'>Have a look at my work</p>
+						<p className='text-xl lg:text-2xl text-center px-1 md:px-4'>Check out my work</p>
 					</div>
 				</div>
 
