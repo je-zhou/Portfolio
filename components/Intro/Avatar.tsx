@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faStar, faSun } from '@fortawesome/free-solid-svg-icons'
 import { AnimatePresence, motion } from 'framer-motion'
 import FlipUp from './FlipUp'
+import Image from 'next/image'
 
 interface AvatarProps {
 	toggleDarkMode: Function
@@ -144,18 +144,27 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 			</div>
 
 			{/* Toggle */}
-
-			<div className='flex flex-row justify-center items-center space-x-4'>
-				<div className='border-2 border-slate-500 w-10 h-10 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer' onClick={(e) => { toggleDarkMode() }}>
-					<FlipUp
-						className='flex flex-col w-full'
-						showFirst={darkMode}
-						first={<FontAwesomeIcon className='text-charade dark:text-white' icon={faMoon} size='xl' />}
-						second={<FontAwesomeIcon className='text-charade dark:text-white' icon={faSun} size='xl' />}
-					></FlipUp>
-
+			<div className='flex flex-col space-y-2 md:space-y-4 mr-12 md:mr-16'>
+				<div className='flex flex-row justify-center items-center space-x-4 pl-8 md:pl-16'>
+					<div className='border-2 border-slate-500 w-10 h-10 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer' onClick={(e) => { toggleDarkMode() }}>
+						<FlipUp
+							className='flex flex-col w-full'
+							showFirst={darkMode}
+							first={<FontAwesomeIcon className='text-charade dark:text-white' icon={faMoon} size='xl' />}
+							second={<FontAwesomeIcon className='text-charade dark:text-white' icon={faSun} size='xl' />}
+						></FlipUp>
+					</div>
+					<p className='text-charade dark:text-heather xl:text-2xl'> {darkMode ? 'Designer & Developer' : 'Global Tax Consultant'}</p>
 				</div>
-				<p className='text-charade dark:text-heather xl:text-2xl'> {darkMode ? 'Designer & Developer' : 'Global Tax Consultant'}</p>
+				<div className='w-[60px] h-[60px] md:w-[100px] md:h-[100px] relative'>
+					<Image
+						className=''
+						src={darkMode ? '/During Night.png' : '/During Day.png'}
+						alt='During mage'
+						fill
+					></Image>
+				</div>
+
 			</div>
 		</div >
 
