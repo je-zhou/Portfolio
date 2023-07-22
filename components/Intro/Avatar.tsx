@@ -144,8 +144,8 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 			</div>
 
 			{/* Toggle */}
-			<div className='flex flex-col space-y-2 md:space-y-4 mr-12 md:mr-16'>
-				<div className='flex flex-row justify-center items-center space-x-4 pl-8 md:pl-16'>
+			<div className='flex flex-col space-y-2 md:space-y-4 mr-6 md:mr-16 '>
+				<div className='flex flex-row justify-center items-center space-x-4 pl-5 md:pl-16'>
 					<div className='border-2 border-slate-500 w-10 h-10 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer' onClick={(e) => { toggleDarkMode() }}>
 						<FlipUp
 							className='flex flex-col w-full'

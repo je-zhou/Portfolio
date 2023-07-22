@@ -14,7 +14,7 @@ export default function Intro({ toggleDarkMode, darkMode }: IntroProps) {
 				<div className='flex flex-col md:flex-1'>
 					<div className='flex flex-col space-y-8 items-center md:items-start md:pb-12'>
 						<p className='text-xl lg:text-4xl text-charade dark:text-heather text-center'>Hello! My Name is</p>
-						<h1 className='text-4xl md:text-7xl xl:text-9xl font-bold text-charade dark:text-white text-center'>Jerry Zhou</h1>
+						<h1 className=' text-4xl md:text-7xl xl:text-9xl font-bold text-charade dark:text-white text-center md:text-left'>Jerry Zhou</h1>
 					</div>
 					<div className='border border-charade dark:border-heather hover:bg-charade hover:dark:bg-heather p-2 md:p-4 rounded-xl w-fit mb-8 mt-8 hover:cursor-pointer text-charade hover:text-white dark:text-white  hover:dark:text-charade'
 						onClick={() => {
