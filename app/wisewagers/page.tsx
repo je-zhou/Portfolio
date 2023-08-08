@@ -61,7 +61,7 @@ export default function Wisewagers() {
 					/>
 					<InfoTile
 						title='Next Steps'
-						description='Ongoing and future plans for this project include expanding the web scrapers to cover more markets, revamping the website design, and subsequently acquiring marketing knowledge to monetize the product.'
+						description='Ongoing and future plans for this project include expanding the web scrapers to cover more markets.'
 						display={
 							<div className=' w-[60%] h-auto relative'>
 								<Image
