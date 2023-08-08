@@ -16,13 +16,11 @@ export default function Wisewagers() {
 				<TitleBackground
 					title='WiseWagers'
 					tags={['Typescript', 'Fullstack', 'Docker', 'NextJS', 'AWS/Azure']}
-					description='A SaaS offering that web scrapes odd from Australia’s biggest bookmakers and runs sports betting algorithms to identify mathematically profitable bets.'
+					description='A series of sports betting tools to identify mathematically profitable bets'
 					backgroundImgUrl='/projects/wisewagers/WiseWagers - Background.png'
 					colors={['#fdfdfd', '#7bbce1']}
 					projectSpec={<ProjectSpec
 						pairs={{
-							"Front End:": "React, NextJS",
-							"Back End:": "Supabase",
 							"AWS:": "EC2, Lambda",
 							"Azure:": "VM, Functions",
 							"Other:": "Discord.js, Express.js, Docker"
@@ -34,7 +32,7 @@ export default function Wisewagers() {
 				<div className='flex flex-col items-center px-4 md:px-24'>
 					<InfoTile
 						title='Project Background'
-						description={`I was inspired to start this project after watching an arbitrage sports betting video on YouTube. I wrote a script and Discord bot to scrape odds from Australian sportsbooks and applied the Arbitrage and Positive Expected Value strategies mentioned in the video.\nIn just six months, I turned $700 into $7,000. Now, I'm working on scaling the sports betting algorithms into a SaaS.`}
+						description={`I was inspired to start this project after watching an arbitrage sports betting video on YouTube. I wrote a script and Discord bot to scrape odds from Australian sportsbooks and applied the Arbitrage and Positive Expected Value strategies mentioned in the video.\nIn just six months, I turned $700 into $7,000.`}
 						display={
 							<div className='h-[40vw] md:h-[25vw] relative w-full md:w-[60%]'>
 								<iframe className='w-full h-full' src="https://www.youtube.com/embed/2kDTwP6SBx4"
