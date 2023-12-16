@@ -9,6 +9,7 @@ import Projects2022 from '@/components/Projects/2022/Projects2022'
 import Connect from '@/components/Connect/Connect'
 import { useState } from 'react'
 import { useThemeContext } from '@/components/ThemeProvider/ThemeProvider'
+import Projects2023 from '@/components/Projects/2023/Projects2023'
 
 export default function Home() {
 	let theme = useThemeContext();
@@ -29,6 +30,7 @@ export default function Home() {
 					<Intro toggleDarkMode={toggleDarkMode} darkMode={darkMode}></Intro>
 					<About></About>
 					<Projects></Projects>
+					<Projects2023></Projects2023>
 					<Projects2022></Projects2022>
 					<Projects2021></Projects2021>
 					<Connect></Connect>
