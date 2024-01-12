@@ -54,8 +54,6 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 												icon={faStar}
 											></FontAwesomeIcon>
 										</div>
-
-
 									</motion.div>
 								)
 							}
@@ -92,8 +90,6 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 												height={10000}
 											></Image>
 										</div>
-
-
 									</motion.div>
 								)
 							}
@@ -154,7 +150,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 							second={<FontAwesomeIcon className='text-charade dark:text-white' icon={faSun} size='xl' />}
 						></FlipUp>
 					</div>
-					<p className='text-charade dark:text-heather xl:text-2xl overflow-visible whitespace-nowrap'> {darkMode ? 'Designer & Developer of cool bits and bobs' : 'Studying a Masters of Computer Science'}</p>
+					<p className='text-charade dark:text-heather xl:text-2xl overflow-visible whitespace-nowrap'> {darkMode ? 'Developer of cool bits and bobs' : 'Studying a Masters of Computer Science'}</p>
 				</div>
 				<div className='w-[60px] h-[60px] md:w-[100px] md:h-[100px] relative'>
 					<Image

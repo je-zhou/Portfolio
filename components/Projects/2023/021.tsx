@@ -12,7 +12,7 @@ export default function ZeroTwoOne() {
 				logoUrl='/project-logos/021 - Light.png'
 				name='021'
 				href='/021'
-				tags={['Typescript', 'NextJS', 'PlanetScale', 'PrismaDB', 'Clerk']}
+				tags={['Typescript', 'NextJS', 'PlanetScale', 'PrismaDB']}
 				description='A web design agency and e-commerce platform designed to help small businesses set up shop online.'
 				websiteUrl='https://021-demo-ecommerce.vercel.app/'
 			></ProjectTile>
