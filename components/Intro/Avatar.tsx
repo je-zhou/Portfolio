@@ -142,7 +142,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 			{/* Toggle */}
 			<div className='flex flex-col space-y-2 md:space-y-4 mr-6 md:mr-16 '>
 				<div className='flex flex-row justify-center items-center space-x-4 pl-5 md:pl-16'>
-					<div className='border-2 border-slate-500 w-10 h-10 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer' onClick={(e) => { toggleDarkMode() }}>
+					<div className='border-2 border-slate-500 w-10 h-10 px-2 md:px-0 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer' onClick={(e) => { toggleDarkMode() }}>
 						<FlipUp
 							className='flex flex-col w-full'
 							showFirst={darkMode}
@@ -150,7 +150,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 							second={<FontAwesomeIcon className='text-charade dark:text-white' icon={faSun} size='xl' />}
 						></FlipUp>
 					</div>
-					<p className='text-charade dark:text-heather xl:text-2xl overflow-visible whitespace-nowrap'> {darkMode ? 'Developer of cool bits and bobs' : 'Studying a Masters of Computer Science'}</p>
+					<p className='text-charade dark:text-heather text-sm xl:text-2xl overflow-visible'> {darkMode ? 'Developer of cool bits and bobs' : 'Studying a MS of Computer Science'}</p>
 				</div>
 				<div className='w-[60px] h-[60px] md:w-[100px] md:h-[100px] relative'>
 					<Image
@@ -160,7 +160,6 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
 						fill
 					></Image>
 				</div>
-
 			</div>
 		</div >
 
