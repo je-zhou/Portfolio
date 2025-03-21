@@ -57,7 +57,7 @@ export default function ProjectTile({ logoUrl, name, tags, description, href, gi
 			<div ref={ref} className='flex flex-col items-start justify-start w-full space-y-4 max-w-md md:max-w-md py-4 md:py-0'>
 				{/* Title and Logo */}
 				<div className='flex flex-row items-center space-x-2'>
-					<div className='w-8 h-8 bg-white border rounded-md relative flex items-center justify-center shadow-sm'>
+					<div className='w-8 h-8 bg-white border rounded-md relative flex items-center justify-center shadow-xs'>
 						<div className='w-6 h-6 relative'>
 							<Image
 								src={logoUrl}

@@ -21,7 +21,7 @@ export default function TitleBackground({ backgroundImgUrl, title, description, 
 				<BackButton></BackButton>
 			</div>
 			{/* Title Image */}
-			< div className='flex flex-col items-center justify-center h-screen w-full text-black dark:text-white bg-gradient-to-b from-light-background/80 to-light-background dark:from-charade/60 dark:to-charade z-20 space-y-8  max-w-full px-4' >
+			< div className='flex flex-col items-center justify-center h-screen w-full text-black dark:text-white bg-linear-to-b from-light-background/80 to-light-background dark:from-charade/60 dark:to-charade z-20 space-y-8  max-w-full px-4' >
 				{/* Title */}
 				<h1 className='text-4xl md:text-6xl font-bold dark:text-white text-charade text-center' >{title}</h1>
 				{/* Color Pallette */}
