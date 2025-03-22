@@ -14,10 +14,10 @@ export default function Intro({ toggleDarkMode, darkMode }: IntroProps) {
         <div className="flex flex-col md:flex-1 pt-48 md:pt-0 items-center ">
           <div className="flex flex-col items-center  ">
             <p className="text-2xl lg:text-4xl text-charade dark:text-heather text-center">
-              Hello! 你好! G'day Mate! 👋
+              Hello! 你好! G&apos;day Mate! 👋
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-charade dark:text-white text-center leading-tight text-nowrap">
-              I'm Jerry
+              I&apos;m Jerry
             </h1>
             <p className="text-center text-xl lg:text-2xl text-charade dark:text-heather">
               a data ethusiast who loves to code <br></br>

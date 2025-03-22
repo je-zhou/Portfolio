@@ -27,9 +27,13 @@ export default function About() {
         <div className="pt-8">
           <div className=" rounded-lg bg-neutral-200 dark:bg-neutral-900 px-4 py-2 dark:text-heather text-neutral-700 text-center text-sm">
             <p className="">
-              <span className="text-black dark:text-white font-black">"</span>
-              Hard work beats talent when talent doesn't work hard
-              <span className="text-black dark:text-white  font-black">"</span>
+              <span className="text-black dark:text-white font-black">
+                &quot;
+              </span>
+              Hard work beats talent when talent doesn&apos;t work hard
+              <span className="text-black dark:text-white  font-black">
+                &quot;
+              </span>
             </p>
           </div>
           <p className="text-center text-charade dark:text-heather pt-1 text-sm italic font-light">
