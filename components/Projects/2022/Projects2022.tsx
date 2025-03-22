@@ -1,15 +1,12 @@
-import React from 'react'
-import Lynk from './Lynk'
-import WiseWagers from './WiseWagers'
+import React from "react";
+import Lynk from "./Lynk";
 
 export default function Projects2022() {
-	return (
-		<div className='w-[95vw] flex flex-col-reverse lg:flex-row justify-end items-center lg:items-start relative'>
-			<div className='flex flex-1 flex-col w-full items-end'>
-				<WiseWagers></WiseWagers>
-				<Lynk></Lynk>
-			</div>
-			<div className='hidden md:sticky py-4 lg:pt-24 top-0 text-4xl lg:text-[3vw] font-bold underline w-full lg:w-fit px-4 text-charade dark:text-white'>2022</div>
-		</div>
-	)
+  return (
+    <div className="w-[95vw] flex flex-col-reverse lg:flex-row justify-end items-center lg:items-start relative">
+      <div className="flex flex-1 flex-col w-full items-end">
+        <Lynk></Lynk>
+      </div>
+    </div>
+  );
 }
