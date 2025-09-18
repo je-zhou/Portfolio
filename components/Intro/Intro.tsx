@@ -1,6 +1,5 @@
 import React from "react";
 import Scroll from "../Scroll/Scroll";
-import Avatar from "./Avatar";
 
 interface IntroProps {
   toggleDarkMode: Function;
@@ -19,24 +18,8 @@ export default function Intro({ toggleDarkMode, darkMode }: IntroProps) {
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-charade dark:text-white text-center leading-tight text-nowrap">
               I&apos;m Jerry
             </h1>
-            <p className="text-center text-xl lg:text-2xl text-charade dark:text-heather">
-              a data ethusiast who loves to code <br></br>
-              <span>🔢🫶🧑🏻‍💻</span>
-            </p>
-          </div>
-          <div
-            className="border border-charade dark:border-heather hover:bg-charade dark:hover:bg-heather p-1 md:p-2 rounded w-fit md:mt-12 my-8 hover:cursor-pointer text-charade hover:text-white dark:text-white  dark:hover:text-charade"
-            onClick={() => {
-              const ele = document.getElementById("Projects");
-              if (ele) {
-                ele.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >
-            <p className=" text-center px-1 md:px-4">My Projects</p>
           </div>
         </div>
-        <Avatar toggleDarkMode={toggleDarkMode} darkMode={darkMode}></Avatar>
       </div>
       <Scroll></Scroll>
     </div>

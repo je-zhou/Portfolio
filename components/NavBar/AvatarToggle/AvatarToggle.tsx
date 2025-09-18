@@ -6,24 +6,27 @@ import { AnimatePresence, motion } from "framer-motion";
 import FlipUp from "./FlipUp";
 import Image from "next/image";
 
-interface AvatarProps {
+interface AvatarToggleProps {
   toggleDarkMode: Function;
   darkMode: boolean;
 }
 
-export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
+export default function AvatarToggle({
+  toggleDarkMode,
+  darkMode,
+}: AvatarToggleProps) {
   return (
-    <div className="flex flex-col space-y-4 items-center">
-      <div className="w-[50vw] md:w-[25vw] h-[50vw] md:h-[25vw] rounded-full  bg-hoki flex justify-center items-end overflow-hidden">
+    <div className="flex flex-row space-x-4 items-center w-full">
+      <div className="w-16 h-16 rounded-full  bg-hoki flex justify-center items-end overflow-hidden">
         {/* Backgrounds */}
-        <div className=" w-[50vw] md:w-[25vw] h-[50vw] md:h-[25vw] absolute rounded-full overflow-hidden ">
+        <div className=" w-16 h-16 absolute rounded-full overflow-hidden">
           <div className="w-3/4 h-full">
             <AnimatePresence>
               {darkMode && (
                 <motion.div
-                  initial={{ x: 500, opacity: 0, scale: 0, width: "0%" }}
+                  initial={{ x: 50, opacity: 0, scale: 0, width: "0%" }}
                   animate={{ x: 0, opacity: 1, scale: 1, width: "50%" }}
-                  exit={{ x: -500, opacity: 0, scale: 0, width: "0%" }}
+                  exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
                 >
                   <div className="relative w-full h-full">
                     <Image
@@ -34,19 +37,19 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
                       height={10000}
                     ></Image>
                     <FontAwesomeIcon
-                      className="absolute left-[4vw] top-[10vh] w-1/6 h-auto"
+                      className="absolute left-12 top-1.5 w-2"
                       icon={faStar}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
-                      className="absolute left-[25vw] md:left-[15vw] top-[2vh] w-1/4 h-auto"
+                      className="absolute left-10 top-4 w-2"
                       icon={faStar}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
-                      className="absolute left-[16vw] md:left-[10vw] top-[4vh] w-1/5 h-auto"
+                      className="absolute left-6 top-0 w-2"
                       icon={faStar}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
-                      className="absolute left-[36vw] md:left-[20vw] top-[8vh] w-1/6 h-auto"
+                      className="absolute left-1 top-3 w-2"
                       icon={faStar}
                     ></FontAwesomeIcon>
                   </div>
@@ -56,9 +59,9 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
             <AnimatePresence>
               {!darkMode && (
                 <motion.div
-                  initial={{ x: 500, opacity: 0, scale: 0, width: "0%" }}
+                  initial={{ x: 50, opacity: 0, scale: 0, width: "0%" }}
                   animate={{ x: 0, opacity: 1, scale: 1, width: "50%" }}
-                  exit={{ x: -500, opacity: 0, scale: 0, width: "0%" }}
+                  exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
                 >
                   <div className="relative w-full h-full">
                     <Image
@@ -70,7 +73,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
                       height={10000}
                     ></Image>
                     <Image
-                      className="absolute left-[2vw] top-[6vh]"
+                      className="absolute left-8 top-2.5"
                       src={"/avatar/Cloud 1.png"}
                       alt="Sun"
                       priority
@@ -78,7 +81,7 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
                       height={10000}
                     ></Image>
                     <Image
-                      className="absolute left-[25vw] md:left-[15vw] top-[2vh] "
+                      className="absolute left-1 top-5 "
                       src={"/avatar/Cloud 2.png"}
                       alt="Sun"
                       priority
@@ -92,14 +95,14 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
           </div>
         </div>
         {/* Avatar */}
-        <div className="w-full flex flex-row justify-center relative top-8">
+        <div className="w-full flex flex-row justify-center relative ">
           <AnimatePresence>
             {darkMode && (
               <motion.div
                 className="h-full"
-                initial={{ x: 500, opacity: 0, scale: 0, width: "0%" }}
+                initial={{ x: 50, opacity: 0, scale: 0, width: "0%" }}
                 animate={{ x: 0, opacity: 1, scale: 1, width: "50%" }}
-                exit={{ x: -500, opacity: 0, scale: 0, width: "0%" }}
+                exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
                   src={"/avatar/Full-Hoodie.png"}
@@ -133,8 +136,16 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
       </div>
 
       {/* Toggle */}
-      <div className="flex flex-col space-y-2 md:space-y-4 mr-6 md:mr-16 ">
-        <div className="flex flex-row justify-center items-center space-x-4 pl-5 md:pl-16">
+      <div className="flex flex-col space-y-2">
+        <div className="flex flex-row justify-center items-center space-x-2 ">
+          <div className="flex flex-row space-x-2 text-xl">
+            <h1>JERRY ZHOU</h1>
+            <h1>‣</h1>
+            <h1>{darkMode ? "Solopreneur" : "Engineer"}</h1>
+          </div>
+
+          <div className="text-xl">by</div>
+
           <div
             className="border-2 border-slate-500 w-10 h-10 px-2 md:px-0 rounded-lg flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer"
             onClick={(e) => {
@@ -160,21 +171,6 @@ export default function Avatar({ toggleDarkMode, darkMode }: AvatarProps) {
               }
             ></FlipUp>
           </div>
-
-          <p className="text-charade dark:text-heather text-sm lg:text-xl overflow-visible pr-8">
-            {darkMode
-              ? "Indie Hacker | Code Cruncher"
-              : "Data Analyst | MS of CompSci"}
-          </p>
-        </div>
-        <div className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] relative">
-          <Image
-            className=""
-            src={darkMode ? "/During Night.png" : "/During Day.png"}
-            alt="During image"
-            priority
-            fill
-          ></Image>
         </div>
       </div>
     </div>
