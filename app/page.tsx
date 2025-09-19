@@ -30,14 +30,8 @@ export default function Home() {
       <div className="flex min-h-screen max-w-full flex-col items-center bg-light-background dark:bg-charade">
         <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}></NavBar>
         <div className="flex flex-col items-center">
-          <Intro toggleDarkMode={toggleDarkMode} darkMode={darkMode}></Intro>
-          <About></About>
+          <Intro />
           <Projects></Projects>
-          <Projects2024></Projects2024>
-          <Projects2023></Projects2023>
-          <Projects2022></Projects2022>
-          <Projects2021></Projects2021>
-          <Connect></Connect>
         </div>
       </div>
     </main>

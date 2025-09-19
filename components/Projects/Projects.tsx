@@ -1,13 +1,35 @@
-import React from 'react'
+import React from "react";
+import ProjectCard from "./shared/ProjectCard";
+import { Card } from "../ui/card";
 
 export default function Projects() {
-	return (
-		<div id='Projects' className='flex flex-col justify-center w-full max-w-4xl md:h-screen px-12 snap-start '>
-			<div className='flex flex-col space-y-16 lg:mb-72 w-full'>
-				<h1 className='text-4xl xs:text-6xl md:text-8xl font-bold text-center text-charade dark:text-white'>Projects</h1>
-				<p className='text-xl font-light text-charade dark:text-heather text-center md:text-left'>
-				</p>
-			</div>
-		</div>
-	)
+  return (
+    <div id="Projects" className="max-w-screen-2xl w-full">
+      <div className="mx-auto px-4 max-w-screen-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          {/* RideGuide */}
+          <ProjectCard
+            title="AI Native Cycling Coach"
+            subtitle="Launched ‣ H2 2025"
+            href="#"
+            displayUrl="/path/to/image1.jpg"
+          />
+
+          <ProjectCard
+            title="Phonetic translator for Chinese, Japanese, and Korean learners"
+            subtitle="Launched ‣ H1 2025"
+            href="#"
+            displayUrl="/path/to/image1.jpg"
+          />
+
+          <ProjectCard
+            title="Cloud Native Algorithmic Sports Betting Bot"
+            subtitle="Launched ‣ H1 2025"
+            href="#"
+            displayUrl="/path/to/image1.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
