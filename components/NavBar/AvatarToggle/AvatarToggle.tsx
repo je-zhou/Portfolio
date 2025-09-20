@@ -17,9 +17,9 @@ export default function AvatarToggle({
 }: AvatarToggleProps) {
   return (
     <div className="flex flex-row space-x-4 items-center w-full">
-      <div className="w-16 h-16 rounded-full  bg-hoki flex justify-center items-end overflow-hidden">
+      <div className="w-10 h-10 rounded-full  bg-hoki flex justify-center items-end overflow-hidden">
         {/* Backgrounds */}
-        <div className=" w-16 h-16 absolute rounded-full overflow-hidden">
+        <div className=" w-10 h-10 absolute rounded-full overflow-hidden">
           <div className="w-3/4 h-full">
             <AnimatePresence>
               {darkMode && (

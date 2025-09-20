@@ -15,14 +15,14 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
   const [isOpen, setisOpen] = useState(false);
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full">
       {/* Desktop Navbar */}
       <div className="hidden md:flex flex-row text-md font-medium opacity-80 justify-between items-center p-8 text-charade dark:text-white max-w-screen-2xl w-full">
         <div className="">
           <AvatarToggle toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         </div>
 
-        <div className="flex flex-row justify-end space-x-8 ">
+        <div className="flex flex-row justify-end space-x-8">
           <Link className="cursor-pointer" href="#About">
             About
           </Link>

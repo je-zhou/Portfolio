@@ -9,22 +9,29 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {/* RideGuide */}
           <ProjectCard
-            title="AI Native Cycling Coach"
+            title="Agentic Cycling Coach Mobile Application"
             subtitle="Launched ‣ H2 2025"
             href="#"
             displayUrl="/path/to/image1.jpg"
           />
 
           <ProjectCard
-            title="Phonetic translator for Chinese, Japanese, and Korean learners"
+            title="Phonetic translator for Asian Langugage Learners"
             subtitle="Launched ‣ H1 2025"
             href="#"
             displayUrl="/path/to/image1.jpg"
           />
 
           <ProjectCard
-            title="Cloud Native Algorithmic Sports Betting Bot"
+            title="Cloud Hosted Algorithmic Sports Betting Bot"
             subtitle="Launched ‣ H1 2025"
+            href="#"
+            displayUrl="/path/to/image1.jpg"
+          />
+
+          <ProjectCard
+            title="AI Native Medical Notes CMS"
+            subtitle="4th Place ‣ Medhack 2024"
             href="#"
             displayUrl="/path/to/image1.jpg"
           />
