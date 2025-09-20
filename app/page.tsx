@@ -13,7 +13,6 @@ export default function Home() {
     <PageLayout className="flex flex-col items-center">
       <Intro />
       <Projects />
-      <Connect />
     </PageLayout>
   );
 }

@@ -15,29 +15,28 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
   const [isOpen, setisOpen] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full border-b">
       {/* Desktop Navbar */}
-      <div className="hidden md:flex flex-row text-md font-medium opacity-80 justify-between items-center p-8 text-charade dark:text-white max-w-screen-2xl w-full">
-        <div className="">
-          <AvatarToggle toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-        </div>
+      <div className="hidden md:flex flex-row text-md font-medium opacity-80 justify-between items-center px-8 py-4  max-w-screen-2xl w-full">
+        <AvatarToggle toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 
         <div className="flex flex-row justify-end space-x-8">
-          <Link className="cursor-pointer" href="#About">
-            About
-          </Link>
+          <Link href="/about">About</Link>
 
-          <Link className="cursor-pointer" href="#About">
-            Work
-          </Link>
+          <Link href="/work">Work</Link>
 
-          <Link className="cursor-pointer" href="#About">
-            Life
-          </Link>
+          <Link href="/life">Life</Link>
 
-          <Link className="cursor-pointer" href="#About">
+          <div
+            className="cursor-pointer"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1-5vFRCKvpYSnCpwDvHjNeTQzvReFhd0J/view?usp=sharing"
+              )
+            }
+          >
             Resume
-          </Link>
+          </div>
         </div>
       </div>
 

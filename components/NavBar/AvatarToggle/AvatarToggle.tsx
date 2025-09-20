@@ -5,6 +5,7 @@ import { faMoon, faStar, faSun } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
 import FlipUp from "./FlipUp";
 import Image from "next/image";
+import Link from "next/link";
 
 interface AvatarToggleProps {
   toggleDarkMode: Function;
@@ -17,7 +18,10 @@ export default function AvatarToggle({
 }: AvatarToggleProps) {
   return (
     <div className="flex flex-row space-x-4 items-center w-full">
-      <div className="w-10 h-10 rounded-full  bg-hoki flex justify-center items-end overflow-hidden">
+      <Link
+        href={"/"}
+        className="w-10 h-10 rounded-full  bg-hoki flex justify-center items-end overflow-hidden"
+      >
         {/* Backgrounds */}
         <div className=" w-10 h-10 absolute rounded-full overflow-hidden">
           <div className="w-3/4 h-full">
@@ -133,13 +137,13 @@ export default function AvatarToggle({
             )}
           </AnimatePresence>
         </div>
-      </div>
+      </Link>
 
       {/* Toggle */}
       <div className="flex flex-col space-y-2">
         <div className="flex flex-row justify-center items-center space-x-2 ">
           <div className="flex flex-row space-x-2 text-xl">
-            <h1>JERRY ZHOU</h1>
+            <Link href={"/"}>JERRY ZHOU</Link>
             <h1>‣</h1>
             <h1>{darkMode ? "Solopreneur" : "Engineer"}</h1>
           </div>
