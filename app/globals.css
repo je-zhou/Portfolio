@@ -5,6 +5,7 @@
 
 @theme {
   --animate-wiggle: wheel 1.5s ease-in-out infinite;
+  --animate-fadeSlideIn: fadeSlideIn 0.5s ease-out;
 
   --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
   --background-image-gradient-conic: conic-gradient(
@@ -23,6 +24,17 @@
     100% {
       transform: translateY(20px);
       opacity: 0;
+    }
+  }
+
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

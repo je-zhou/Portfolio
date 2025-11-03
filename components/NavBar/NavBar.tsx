@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import AvatarToggle from "./AvatarToggle/AvatarToggle";
+import MobileAvatarToggle from "./AvatarToggle/MobileAvatarToggle";
 
 interface NavbarProps {
   toggleDarkMode: Function;
@@ -25,8 +26,6 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
 
           <Link href="/work">Work</Link>
 
-          <Link href="/portfolio">Portfolio</Link>
-
           <div
             className="cursor-pointer"
             onClick={() =>
@@ -42,15 +41,20 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
 
       {/* Mobile Hamburger Nav */}
       <div
-        className={`md:hidden z-30 text-md min-w-full font-bold p-6  duration-200 fixed
+        className={`md:hidden z-30 text-md min-w-full font-medium py-3 px-6 duration-200 fixed
 			 ${
          isOpen
-           ? "dark:bg-heather bg-charade dark:text-charade text-white max-h-screen "
-           : "text-charade dark:text-white"
-       } 
+           ? "dark:bg-light-background bg-charade dark:text-charade text-white max-h-screen"
+           : "text-charade dark:text-white bg-light-background dark:bg-charade border-b border-gray-300 dark:border-gray-700"
+       }
 			 `}
       >
-        <div className="flex flex-col items-end ">
+        <div className="flex flex-row items-center justify-between w-full">
+          <MobileAvatarToggle
+            toggleDarkMode={toggleDarkMode}
+            darkMode={darkMode}
+            isOpen={isOpen}
+          />
           <FontAwesomeIcon
             className="cursor-pointer"
             icon={faBars}
@@ -63,25 +67,28 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
             isOpen ? "h-screen" : "h-0"
           } duration-200`}
         >
-          <div className="flex flex-col justify-between text-md font-bold opacity-80 h-[90vh] py-8 dark:text-charade text-white">
+          <div className="flex flex-col justify-between text-md opacity-80 h-[90vh] py-8 text-white dark:text-charade">
             <div className="space-y-8 flex flex-col">
-              <Link className="cursor-pointer" href="#About">
+              <Link className="cursor-pointer" href="/about">
                 About
               </Link>
 
-              <Link className="cursor-pointer" href="#About">
+              <Link className="cursor-pointer" href="/work">
                 Work
               </Link>
 
-              <Link className="cursor-pointer" href="#About">
-                Life
-              </Link>
-
-              <Link className="cursor-pointer" href="#About">
+              <div
+                className="cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1-5vFRCKvpYSnCpwDvHjNeTQzvReFhd0J/view?usp=sharing"
+                  )
+                }
+              >
                 Resume
-              </Link>
+              </div>
             </div>
-            <div className="flex flex-row space-x-8">
+            <div className="flex flex-row space-x-8 text-white dark:text-charade">
               <FontAwesomeIcon
                 className="cursor-pointer"
                 icon={faLinkedin}

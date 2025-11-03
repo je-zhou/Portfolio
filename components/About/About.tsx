@@ -9,7 +9,7 @@ export default function About() {
       className="flex flex-col w-full max-w-4xl px-4 sm:px-6 md:px-8 snap-start overflow-hidden"
     >
       <div className="flex flex-col space-y-6 justify-center items-center w-full">
-        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-charade dark:text-white pb-4 text-center sm:text-left w-full">
+        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-charade dark:text-white pb-4 w-full">
           I&apos;m just a guy on a quest to turn my love for tech into something
           big.
         </h1>

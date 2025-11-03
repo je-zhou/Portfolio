@@ -28,7 +28,7 @@ export default function PageLayout({
     <main className={`${darkMode ? "dark" : ""}`}>
       <div className="flex min-h-screen max-w-full flex-col items-center bg-light-background dark:bg-charade text-charade dark:text-white">
         <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}></NavBar>
-        <div className={`${className} flex flex-col items-center pt-20 pb-40`}>
+        <div className={`${className} flex flex-col items-center pt-24 pb-40`}>
           {children}
         </div>
         <Footer />

@@ -7,23 +7,25 @@ import FlipUp from "./FlipUp";
 import Image from "next/image";
 import Link from "next/link";
 
-interface AvatarToggleProps {
+interface MobileAvatarToggleProps {
   toggleDarkMode: Function;
   darkMode: boolean;
+  isOpen: boolean;
 }
 
-export default function AvatarToggle({
+export default function MobileAvatarToggle({
   toggleDarkMode,
   darkMode,
-}: AvatarToggleProps) {
+  isOpen,
+}: MobileAvatarToggleProps) {
   return (
-    <div className="flex flex-row space-x-4 items-center w-full">
+    <div className="flex flex-row items-center space-x-2">
       <Link
         href={"/"}
-        className="w-10 h-10 rounded-full  bg-hoki flex justify-center items-end overflow-hidden"
+        className="w-10 h-10 rounded-full bg-hoki flex justify-center items-end overflow-hidden relative"
       >
         {/* Backgrounds */}
-        <div className=" w-10 h-10 absolute rounded-full overflow-hidden">
+        <div className="w-10 h-10 absolute rounded-full overflow-hidden">
           <div className="w-3/4 h-full">
             <AnimatePresence>
               {darkMode && (
@@ -35,27 +37,27 @@ export default function AvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src={"/avatar/Moon.png"}
-                      alt="Sun"
+                      src="/avatar/Moon.png"
+                      alt="Moon"
                       width={10000}
                       height={10000}
-                    ></Image>
+                    />
                     <FontAwesomeIcon
-                      className="absolute left-12 top-1.5 w-2"
+                      className="absolute left-9 top-0.5 w-1"
                       icon={faStar}
-                    ></FontAwesomeIcon>
+                    />
                     <FontAwesomeIcon
-                      className="absolute left-10 top-4 w-2"
+                      className="absolute left-7 top-3 w-1"
                       icon={faStar}
-                    ></FontAwesomeIcon>
+                    />
                     <FontAwesomeIcon
-                      className="absolute left-6 top-0 w-2"
+                      className="absolute left-4 top-0 w-1"
                       icon={faStar}
-                    ></FontAwesomeIcon>
+                    />
                     <FontAwesomeIcon
-                      className="absolute left-1 top-3 w-2"
+                      className="absolute left-0.5 top-2 w-1"
                       icon={faStar}
-                    ></FontAwesomeIcon>
+                    />
                   </div>
                 </motion.div>
               )}
@@ -70,28 +72,28 @@ export default function AvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src={"/avatar/Sun.png"}
+                      src="/avatar/Sun.png"
                       alt="Sun"
                       priority
                       width={10000}
                       height={10000}
-                    ></Image>
+                    />
                     <Image
-                      className="absolute left-8 top-2.5"
-                      src={"/avatar/Cloud 1.png"}
-                      alt="Sun"
+                      className="absolute left-6 top-2"
+                      src="/avatar/Cloud 1.png"
+                      alt="Cloud"
                       priority
                       width={10000}
                       height={10000}
-                    ></Image>
+                    />
                     <Image
-                      className="absolute left-1 top-5 "
-                      src={"/avatar/Cloud 2.png"}
-                      alt="Sun"
+                      className="absolute left-0.5 top-4"
+                      src="/avatar/Cloud 2.png"
+                      alt="Cloud"
                       priority
                       width={10000}
                       height={10000}
-                    ></Image>
+                    />
                   </div>
                 </motion.div>
               )}
@@ -99,7 +101,7 @@ export default function AvatarToggle({
           </div>
         </div>
         {/* Avatar */}
-        <div className="w-full flex flex-row justify-center relative ">
+        <div className="w-full flex flex-row justify-center relative">
           <AnimatePresence>
             {darkMode && (
               <motion.div
@@ -109,12 +111,12 @@ export default function AvatarToggle({
                 exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src={"/avatar/Full-Hoodie.png"}
-                  alt="Full Hoodie"
+                  src="/avatar/Full-Hoodie.png"
+                  alt="Avatar"
                   priority
                   width={10000}
                   height={10000}
-                ></Image>
+                />
               </motion.div>
             )}
           </AnimatePresence>
@@ -127,52 +129,48 @@ export default function AvatarToggle({
                 exit={{ x: -1000, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src={"/avatar/Full-Shirt.png"}
-                  alt="Full Hoodie"
+                  src="/avatar/Full-Shirt.png"
+                  alt="Avatar"
                   priority
                   width={10000}
                   height={10000}
-                ></Image>
+                />
               </motion.div>
             )}
           </AnimatePresence>
         </div>
       </Link>
 
-      {/* Toggle */}
-      <div className="flex flex-col space-y-2">
-        <div className="flex flex-row justify-center items-center space-x-2 ">
-          <div className="flex flex-row space-x-2 ">
-            <Link href={"/"}>JERRY ZHOU</Link>
-            <h1>‣</h1>
-            <h1>{darkMode ? "Solopreneur by" : "Engineer by"}</h1>
-          </div>
-          <div
-            className="border-2 border-slate-500 w-8 h-8 px-2 md:px-0 rounded-md flex dark:hover:bg-slate-500 hover:bg-slate-200 cursor-pointer"
-            onClick={(e) => {
-              toggleDarkMode();
-            }}
-          >
-            <FlipUp
-              className="flex flex-col w-full"
-              showFirst={darkMode}
-              first={
-                <FontAwesomeIcon
-                  className="text-charade dark:text-white"
-                  icon={faMoon}
-                  size="sm"
-                />
-              }
-              second={
-                <FontAwesomeIcon
-                  className="text-charade dark:text-white"
-                  icon={faSun}
-                  size="sm"
-                />
-              }
-            ></FlipUp>
-          </div>
-        </div>
+      <h1>{darkMode ? "Solopreneur by" : "Engineer by"}</h1>
+
+      <div
+        className={`border-2 w-8 h-8 px-2 md:px-0 rounded-md flex cursor-pointer ${
+          isOpen
+            ? "border-white dark:border-charade hover:bg-white/20 dark:hover:bg-charade/20"
+            : "border-slate-500 dark:hover:bg-slate-500 hover:bg-slate-200"
+        }`}
+        onClick={(e) => {
+          toggleDarkMode();
+        }}
+      >
+        <FlipUp
+          className="flex flex-col w-full"
+          showFirst={darkMode}
+          first={
+            <FontAwesomeIcon
+              className={isOpen ? "text-white dark:text-charade" : "text-charade dark:text-white"}
+              icon={faMoon}
+              size="sm"
+            />
+          }
+          second={
+            <FontAwesomeIcon
+              className={isOpen ? "text-white dark:text-charade" : "text-charade dark:text-white"}
+              icon={faSun}
+              size="sm"
+            />
+          }
+        />
       </div>
     </div>
   );
