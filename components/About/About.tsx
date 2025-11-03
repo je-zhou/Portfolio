@@ -1,44 +1,54 @@
-import React, { MutableRefObject } from "react";
+import React from "react";
+import InfiniteCarousel from "./InfiniteCarousel";
+import Link from "next/link";
 
 export default function About() {
   return (
-    <div
-      id="About"
-      className="flex flex-col justify-center w-full max-w-4xl h-screen px-8 snap-start "
-    >
+    <div id="About" className="flex flex-col w-full max-w-4xl px-8 snap-start">
       <div className="flex flex-col space-y-6 justify-center items-center ">
-        <h1 className="text-4xl xs:text-6xl md:text-8xl font-bold text-charade dark:text-white text-center pb-8">
-          About Me
+        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-charade dark:text-white pb-4">
+          I&apos;m just a guy on a quest to turn my love for tech into something
+          big.
         </h1>
 
         {/* About */}
-        <p className="text-xl font-light text-charade dark:text-heather text-center leading-relaxed">
-          {
-            "Hey! I'm just a guy on a quest to turn my lifelong love for tech into something big 🚀."
-          }
-        </p>
-        <p className="text-xl font-light text-charade dark:text-heather text-center  leading-relaxed">
-          {
-            "I used to be in the corporate world, doing the Big-4 thing 🏢, but now I'm all about chasing my passion for computer science ⚡️."
-          }
-        </p>
-
-        {/* Quote */}
-        <div className="pt-8">
-          <div className=" rounded-lg bg-neutral-200 dark:bg-neutral-900 px-4 py-2 dark:text-heather text-neutral-700 text-center text-sm">
-            <p className="">
-              <span className="text-black dark:text-white font-black">
-                &quot;
-              </span>
-              Hard work beats talent when talent doesn&apos;t work hard
-              <span className="text-black dark:text-white  font-black">
-                &quot;
-              </span>
-            </p>
-          </div>
-          <p className="text-center text-charade dark:text-heather pt-1 text-sm italic font-light">
-            Tim Nokte
+        <div className="space-y-5 pr-12 font-light text-charade dark:text-heather leading-relaxed">
+          <p>
+            My journey into tech has been far from traditional. I used to be in
+            the corporate world, doing the Big-4 thing, but now I&apos;m all
+            about chasing my passion for computer science.
           </p>
+          <p>
+            I recently wrapped up my Master&apos;s of Computer Science at the
+            University of Monash, where I also helped grow Monash Association of
+            Coding into the largest student-run tech club in the southern
+            hemisphere.
+          </p>
+          <p>
+            Outside of coding I enjoy eating, keeping fit, cycling, and
+            buttering up my cat.
+          </p>
+          <p>
+            You can get in touch with me on{" "}
+            <Link
+              href="https://www.linkedin.com/in/je-zhou/"
+              className="underline"
+            >
+              LinkedIn
+            </Link>{" "}
+            or by{" "}
+            <a
+              href="mailto:jerry.zhou07@gmail.com"
+              className="underline hover:opacity-80 transition-opacity"
+            >
+              Email
+            </a>
+          </p>
+        </div>
+
+        {/* Reel*/}
+        <div className="w-full mt-12">
+          <InfiniteCarousel />
         </div>
       </div>
     </div>

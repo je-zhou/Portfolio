@@ -10,7 +10,7 @@ import PageLayout from "@/components/PageLayout";
 
 export default function Home() {
   return (
-    <PageLayout className="flex flex-col items-center">
+    <PageLayout className="flex flex-col items-center pb-40">
       <Intro />
       <Projects />
     </PageLayout>
