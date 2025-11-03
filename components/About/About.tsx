@@ -4,15 +4,18 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div id="About" className="flex flex-col w-full max-w-4xl px-8 snap-start">
-      <div className="flex flex-col space-y-6 justify-center items-center ">
-        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-charade dark:text-white pb-4">
+    <div
+      id="About"
+      className="flex flex-col w-full max-w-4xl px-4 sm:px-6 md:px-8 snap-start overflow-hidden"
+    >
+      <div className="flex flex-col space-y-6 justify-center items-center w-full">
+        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-charade dark:text-white pb-4 text-center sm:text-left w-full">
           I&apos;m just a guy on a quest to turn my love for tech into something
           big.
         </h1>
 
         {/* About */}
-        <div className="space-y-5 pr-12 font-light text-charade dark:text-heather leading-relaxed">
+        <div className="space-y-5 pr-0 sm:pr-8 md:pr-12 font-light text-charade dark:text-heather leading-relaxed text-sm sm:text-base w-full">
           <p>
             My journey into tech has been far from traditional. I used to be in
             the corporate world, doing the Big-4 thing, but now I&apos;m all
@@ -47,7 +50,7 @@ export default function About() {
         </div>
 
         {/* Reel*/}
-        <div className="w-full mt-12">
+        <div className="w-full mt-8 sm:mt-10 md:mt-12 overflow-hidden max-w-[90vw]">
           <InfiniteCarousel />
         </div>
       </div>
