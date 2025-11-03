@@ -12,28 +12,28 @@ export default function Projects() {
             title="Agentic Cycling Coach Mobile Application"
             subtitle="Launched ‣ H2 2025"
             href="#"
-            displayUrl="/path/to/image1.jpg"
+            displayUrl="/projects/wattsup/Latest Ride Promo.mov"
           />
 
           <ProjectCard
-            title="Phonetic translator for Asian Langugage Learners"
+            title="RAG based chatbot plugin"
             subtitle="Launched ‣ H1 2025"
             href="#"
-            displayUrl="/path/to/image1.jpg"
+            displayUrl="/projects/servu/Servu Promo.mov"
           />
 
           <ProjectCard
             title="Cloud Hosted Algorithmic Sports Betting Bot"
             subtitle="Launched ‣ H1 2025"
             href="#"
-            displayUrl="/path/to/image1.jpg"
+            displayUrl="/projects/wisewagers/WiseWagers Promo.png"
           />
 
           <ProjectCard
             title="AI Native Medical Notes CMS"
             subtitle="4th Place ‣ Medhack 2024"
             href="#"
-            displayUrl="/path/to/image1.jpg"
+            displayUrl="/projects/askMd/AskMd Promo.mov"
           />
         </div>
       </div>
