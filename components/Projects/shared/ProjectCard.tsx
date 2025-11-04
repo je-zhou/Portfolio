@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Film } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -112,6 +113,11 @@ export default function ProjectCard({
             Your browser does not support the video tag.
           </video>
 
+          {/* Movie Icon Indicator */}
+          <div className="absolute top-3 right-3">
+            <Film className="w-6 h-6 text-black opacity-50" />
+          </div>
+
           {/* Progress Bar */}
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200/30">
             <div
@@ -134,8 +140,8 @@ export default function ProjectCard({
       )}
 
       <div className="space-y-1">
-        <h1 className="text-2xl font-medium">{title}</h1>
-        <p className="text-lg">{subtitle}</p>
+        <h1 className="text-xl font-medium">{title}</h1>
+        <p className="text-neutral-500">{subtitle}</p>
       </div>
     </Link>
   );

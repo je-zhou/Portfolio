@@ -21,7 +21,7 @@ export default function WattsUpPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/wattsup/Latest Ride Promo.mov"
+          src="/projects/wattsup/Wattsup-Promo.mov"
           alt="WattsUp app demo"
           priority
         />

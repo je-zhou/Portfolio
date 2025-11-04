@@ -20,7 +20,7 @@ export default function WiseWagersPage() {
     <ProjectLayout
       title="WiseWagers"
       subtitle="Cloud Hosted Algorithmic Sports Betting Bot"
-      year="H1 2025"
+      year="2023 Season"
       tags={["Machine Learning", "Python", "AWS", "Data Science"]}
       tableOfContents={tableOfContents}
     >
