@@ -41,28 +41,13 @@ const projects = [
 ];
 
 export default function Intro() {
-  const theme = useThemeContext();
-  const [darkMode, setDarkMode] = useState<boolean>(
-    theme === "light" ? false : true
-  );
+  const { theme } = useThemeContext();
+  const [darkMode, setDarkMode] = useState<boolean>(theme === "dark");
 
-  // Watch for dark mode changes by observing the parent's class
+  // Watch for theme changes from context
   useEffect(() => {
-    const observer = new MutationObserver(() => {
-      const isDark = document.querySelector("main")?.classList.contains("dark");
-      setDarkMode(isDark || false);
-    });
-
-    const mainElement = document.querySelector("main");
-    if (mainElement) {
-      observer.observe(mainElement, {
-        attributes: true,
-        attributeFilter: ["class"],
-      });
-    }
-
-    return () => observer.disconnect();
-  }, []);
+    setDarkMode(theme === "dark");
+  }, [theme]);
 
   const displayData = darkMode ? projects : jobHistory;
 
