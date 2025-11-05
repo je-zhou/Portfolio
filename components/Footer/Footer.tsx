@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="w-full border-t">
-      <div className="flex flex-row justify-between items-center w-full px-8 py-4">
+      <div className="flex flex-row justify-between items-center w-full max-w-screen-2xl mx-auto px-8 py-4">
         <div className="">Designed by Me</div>
         <div className="flex flex-row space-x-4">
           <FontAwesomeIcon

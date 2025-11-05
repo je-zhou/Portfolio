@@ -18,7 +18,7 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
   return (
     <div className="w-full border-b">
       {/* Desktop Navbar */}
-      <div className="hidden md:flex flex-row text-md font-medium opacity-80 justify-between items-center px-8 py-4 max-w-screen-2xl w-full">
+      <div className="hidden md:flex flex-row text-md font-medium opacity-80 justify-between items-center px-8 py-4 max-w-screen-2xl w-full mx-auto">
         <AvatarToggle toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 
         <div className="flex flex-row justify-end space-x-8">

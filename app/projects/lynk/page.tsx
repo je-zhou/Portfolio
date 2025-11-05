@@ -18,7 +18,7 @@ export default function LynkPage() {
       title="Lynk"
       subtitle="Government Sponsored Community Education App"
       year="2022"
-      tags={["Mobile", "Education", "React Native", "GovHack - 1st Place"]}
+      tags={["Mobile", "Education", "Flutter", "GovHack - 1st Place"]}
       tableOfContents={tableOfContents}
     >
       <ProjectSection>
@@ -31,102 +31,116 @@ export default function LynkPage() {
 
       <ProjectSection
         title="Overview"
-        subtitle="Connecting community members with local educational opportunities and resources"
+        subtitle="Connecting students with life skills, mentors, and opportunities"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          Lynk is a mobile application developed for GovHack 2022 that connects
-          community members with educational opportunities, workshops, and
-          resources in their local area. The app was built in response to the
-          challenge of improving access to community education programs,
-          particularly in underserved areas.
+        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          Lynk is a mobile application developed for GovHack 2022 that helps
+          students adapt to life after school by connecting them with events in
+          their local community to learn essential life skills like investing,
+          doing laundry, cooking, and other skills that often aren&apos;t taught
+          in school. This is particularly important in rural areas where such
+          resources may be limited.
         </p>
+        <ProjectMedia
+          src="/projects/lynk/Lynk-Spec.png"
+          alt="Lynk feature specifications"
+        />
       </ProjectSection>
 
       <ProjectSection title="The Challenge">
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          Many Australian communities, particularly in regional and remote
-          areas, have limited access to educational resources and programs.
-          Existing community education initiatives often suffer from:
+          Students graduating from school often lack essential life skills that
+          aren&apos;t traditionally taught in the classroom. This gap is
+          particularly pronounced in rural and regional areas where access to
+          practical life skills education, mentorship, and career opportunities
+          is limited. Young adults face:
         </p>
         <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
-          <li>Poor discoverability - people don&apos;t know what&apos;s available</li>
-          <li>Fragmented information across multiple platforms</li>
-          <li>Lack of connection between education providers and community needs</li>
-          <li>No centralized way to track community education engagement</li>
+          <li>Limited access to practical life skills workshops and events</li>
+          <li>
+            Difficulty connecting with mentors and alumni from their schools
+          </li>
+          <li>
+            Fragmented information about local job opportunities and career
+            resources
+          </li>
+          <li>
+            No centralized platform to discover government-sponsored programs
+            and community events
+          </li>
         </ul>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
           The GovHack challenge asked teams to create innovative solutions that
-          would increase participation in community education programs and
-          improve educational equity across Australia.
+          would help students transition successfully from school to independent
+          life, particularly in underserved communities.
         </p>
       </ProjectSection>
 
       <ProjectSection title="Our Solution">
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          Lynk brings together all community education opportunities in one
-          accessible mobile platform. The app uses location-based services to
-          show users relevant programs near them, personalized recommendations
-          based on their interests, and tools for education providers to reach
-          their target audiences effectively.
+          Lynk combines the best features of popular platforms into one
+          comprehensive mobile app designed specifically for students
+          transitioning to independent life. Drawing inspiration from Meetup for
+          discovering local events, LinkedIn for connecting with mentors and
+          alumni, and traditional job boards for finding opportunities, Lynk
+          creates a unified platform tailored to students&apos; needs.
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          By lowering the barriers to discovery and participation, Lynk helps
-          communities make better use of existing educational resources while
-          identifying gaps that need to be addressed by government and
-          community organizations.
+          The app prioritizes government-sponsored programs and uses
+          location-based services to show relevant opportunities nearby. By
+          centralizing life skills events, mentorship connections, and local job
+          opportunities in one accessible platform, Lynk empowers students to
+          build the skills and networks they need for success after school.
         </p>
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300 mb-6">
           <li>
             <strong className="text-black dark:text-white">
-              Location-Based Discovery:
+              Local Event Discovery:
             </strong>{" "}
-            Find educational programs, workshops, and resources near you
+            Find life skills workshops and community events in your area, with
+            priority given to government-sponsored programs. Learn practical
+            skills like investing, cooking, doing laundry, and other essential
+            life competencies that aren&apos;t typically taught in school.
           </li>
           <li>
             <strong className="text-black dark:text-white">
-              Personalized Recommendations:
+              Alumni & Mentor Network:
             </strong>{" "}
-            Get suggestions based on your interests, skill level, and learning
-            goals
+            Connect and chat with school alumni to find mentors who can provide
+            guidance, share experiences, and help navigate life after school.
+            Build meaningful relationships with people who understand your
+            journey.
           </li>
           <li>
             <strong className="text-black dark:text-white">
-              Provider Portal:
+              Job Board & Opportunities:
             </strong>{" "}
-            Education providers can post programs and track engagement
-          </li>
-          <li>
-            <strong className="text-black dark:text-white">
-              Community Impact Dashboard:
-            </strong>{" "}
-            Visualize education participation and identify underserved areas
-          </li>
-          <li>
-            <strong className="text-black dark:text-white">
-              Offline Access:
-            </strong>{" "}
-            Download program information for areas with limited connectivity
-          </li>
-          <li>
-            <strong className="text-black dark:text-white">
-              Multilingual Support:
-            </strong>{" "}
-            Content available in multiple languages to serve diverse communities
+            Browse jobs and local opportunities tailored to your interests and
+            industry. Discover career paths, internships, and entry-level
+            positions in your area to kickstart your professional journey.
           </li>
         </ul>
+        <ProjectMedia
+          src="/projects/lynk/Lynk-Snippets.png"
+          alt="Lynk app snippets"
+        />
       </ProjectSection>
 
       <ProjectSection title="Hackathon Experience">
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          Building Lynk during GovHack 2022 was an intensive 48-hour sprint. Our
+          Building Lynk during GovHack 2022 was an intensive 72-hour sprint. Our
           team of developers, designers, and a community education specialist
           worked together to create a functional prototype that addressed the
           challenge brief.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <ProjectMedia
+          src="/projects/lynk/Lynk-Experience.png"
+          alt="Lynk hackathon experience"
+        />
+        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-6">
           Key challenges included:
         </p>
         <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
@@ -134,8 +148,10 @@ export default function LynkPage() {
             Integrating multiple government datasets into a coherent experience
           </li>
           <li>Designing for accessibility and diverse user needs</li>
-          <li>Building a mobile app from scratch in under 48 hours</li>
-          <li>Creating a compelling pitch that demonstrated real community impact</li>
+          <li>Building a mobile app from scratch in under 72 hours</li>
+          <li>
+            Creating a compelling pitch that demonstrated real community impact
+          </li>
         </ul>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
           Despite the time pressure, we delivered a polished prototype with core
@@ -148,21 +164,15 @@ export default function LynkPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">Frontend</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              React Native, Expo
-            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Flutter</p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">Backend</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Node.js, Express
-            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Firebase</p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">Database</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              PostgreSQL, Firebase
-            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Firebase</p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">APIs</p>
@@ -176,17 +186,18 @@ export default function LynkPage() {
       <ProjectSection title="Impact & Recognition">
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
           Lynk won 1st place at GovHack 2022, recognized for its innovative
-          approach to community education access and its potential for real-world
-          impact. The judges praised the app&apos;s user-centric design,
-          technical execution, and clear demonstration of how it would address
-          the challenge brief.
+          approach to community education access and its potential for
+          real-world impact. The judges praised the app&apos;s user-centric
+          design, technical execution, and clear demonstration of how it would
+          address the challenge brief.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
           Following the hackathon, we were invited to present the concept to
           government stakeholders interested in piloting similar solutions for
           community education programs. While Lynk itself remains a hackathon
           project, the ideas and learnings from its development have influenced
-          how we think about building accessible, community-focused applications.
+          how we think about building accessible, community-focused
+          applications.
         </p>
       </ProjectSection>
     </ProjectLayout>

@@ -26,7 +26,7 @@ export default function PageLayout({
       <div className="flex min-h-screen max-w-full flex-col items-center bg-light-background dark:bg-charade text-charade dark:text-white">
         <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}></NavBar>
         <div
-          className={`${className} flex flex-col items-center pt-24 md:pt-8 pb-40`}
+          className={`${className} flex flex-col items-center pt-24 md:pt-8 pb-40 flex-grow w-full`}
         >
           {children}
         </div>
