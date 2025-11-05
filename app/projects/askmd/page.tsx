@@ -174,10 +174,7 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="Our Pitch">
-        <ProjectMedia
-          src="/projects/askMd/pitch.mov"
-          alt="AskMd pitch video"
-        />
+        <ProjectMedia src="/projects/askMd/pitch.mov" alt="AskMd pitch video" />
 
         {/* Collapsible pitch script */}
         <details className="group">
@@ -245,14 +242,12 @@ export default function AskMdPage() {
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">Frontend</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              React, TypeScript
+              React, TypeScript, NextJS, TailwindCSS
             </p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">Backend</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Python, Flask
-            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">NextJS</p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <p className="font-semibold text-black dark:text-white">AI/ML</p>
