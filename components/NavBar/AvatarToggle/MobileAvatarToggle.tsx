@@ -43,20 +43,24 @@ export default function MobileAvatarToggle({
                       height={10000}
                     />
                     <FontAwesomeIcon
-                      className="absolute left-9 top-0.5 w-1"
+                      className={`absolute left-9 top-0.5 ${isOpen ? "text-white" : ""}`}
                       icon={faStar}
+                      size="2xs"
                     />
                     <FontAwesomeIcon
-                      className="absolute left-7 top-3 w-1"
+                      className={`absolute left-7 top-3 ${isOpen ? "text-white" : ""}`}
                       icon={faStar}
+                      size="2xs"
                     />
                     <FontAwesomeIcon
-                      className="absolute left-4 top-0 w-1"
+                      className={`absolute left-4 top-0 ${isOpen ? "text-white" : ""}`}
                       icon={faStar}
+                      size="2xs"
                     />
                     <FontAwesomeIcon
-                      className="absolute left-0.5 top-2 w-1"
+                      className={`absolute left-0.5 top-2 ${isOpen ? "text-white" : ""}`}
                       icon={faStar}
+                      size="2xs"
                     />
                   </div>
                 </motion.div>

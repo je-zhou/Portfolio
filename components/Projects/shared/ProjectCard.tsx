@@ -22,6 +22,7 @@ export default function ProjectCard({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [progress, setProgress] = useState(0);
   const [opacity, setOpacity] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
   const animationFrameRef = useRef<number | undefined>(undefined);
   const resetTimerRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
@@ -81,7 +82,16 @@ export default function ProjectCard({
   };
 
   useEffect(() => {
+    // Check if mobile on mount and window resize
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint is 768px
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
     return () => {
+      window.removeEventListener("resize", checkMobile);
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
@@ -91,12 +101,26 @@ export default function ProjectCard({
     };
   }, []);
 
+  // Autoplay on mobile
+  useEffect(() => {
+    if (isVideo && isMobile && videoRef.current) {
+      videoRef.current.play();
+      animationFrameRef.current = requestAnimationFrame(updateProgress);
+    } else if (isVideo && !isMobile && videoRef.current) {
+      // Pause on desktop (hover will control playback)
+      videoRef.current.pause();
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+    }
+  }, [isMobile, isVideo]);
+
   return (
     <Link
       href={href}
       className="text-black dark:text-white space-y-3"
-      onMouseEnter={isVideo ? handleMouseEnter : undefined}
-      onMouseLeave={isVideo ? handleMouseLeave : undefined}
+      onMouseEnter={isVideo && !isMobile ? handleMouseEnter : undefined}
+      onMouseLeave={isVideo && !isMobile ? handleMouseLeave : undefined}
     >
       {isVideo ? (
         <div className="relative w-full h-96 overflow-hidden rounded-sm border bg-white">

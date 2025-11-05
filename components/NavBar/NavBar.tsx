@@ -69,21 +69,22 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
         >
           <div className="flex flex-col justify-between text-md opacity-80 h-[90vh] py-8 text-white dark:text-charade">
             <div className="space-y-8 flex flex-col">
-              <Link className="cursor-pointer" href="/about">
+              <Link className="cursor-pointer" href="/about" onClick={() => setisOpen(false)}>
                 About
               </Link>
 
-              <Link className="cursor-pointer" href="/work">
+              <Link className="cursor-pointer" href="/work" onClick={() => setisOpen(false)}>
                 Work
               </Link>
 
               <div
                 className="cursor-pointer"
-                onClick={() =>
+                onClick={() => {
                   window.open(
                     "https://drive.google.com/file/d/1-5vFRCKvpYSnCpwDvHjNeTQzvReFhd0J/view?usp=sharing"
-                  )
-                }
+                  );
+                  setisOpen(false);
+                }}
               >
                 Resume
               </div>

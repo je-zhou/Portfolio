@@ -174,7 +174,12 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="Our Pitch">
-        <ProjectMedia src="/projects/askMd/pitch.mov" alt="AskMd pitch video" />
+        <ProjectMedia
+          src="/projects/askMd/pitch.mov"
+          alt="AskMd pitch video"
+          autoplay={false}
+          loop={false}
+        />
 
         {/* Collapsible pitch script */}
         <details className="group">

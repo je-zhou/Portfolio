@@ -9,6 +9,8 @@ interface ProjectMediaProps {
   caption?: string;
   className?: string;
   priority?: boolean;
+  autoplay?: boolean;
+  loop?: boolean;
 }
 
 export default function ProjectMedia({
@@ -17,10 +19,21 @@ export default function ProjectMedia({
   caption,
   className = "",
   priority = false,
+  autoplay = true,
+  loop = true,
 }: ProjectMediaProps) {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const isVideo = /\.(mp4|mov|webm|ogg)$/i.test(src);
+
+  const handleVideoLoaded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    setIsVideoLoaded(true);
+    if (autoplay) {
+      e.currentTarget.play().catch(() => {
+        // Autoplay was prevented, user interaction required
+      });
+    }
+  };
 
   return (
     <figure className={`my-8 ${className}`}>
@@ -32,11 +45,12 @@ export default function ProjectMedia({
           <video
             src={src}
             controls
-            loop
+            autoPlay={autoplay}
+            loop={loop}
             muted
             playsInline
             preload="metadata"
-            onLoadedData={() => setIsVideoLoaded(true)}
+            onLoadedData={handleVideoLoaded}
             className={`w-full h-auto transition-opacity duration-500 ${
               isVideoLoaded ? "opacity-100" : "opacity-0"
             }`}
