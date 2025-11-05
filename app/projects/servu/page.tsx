@@ -32,7 +32,7 @@ export default function ServUPage() {
         title="Overview"
         subtitle="An intelligent chatbot plugin that provides context-aware customer support using RAG technology"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           ServU is a Chrome extension that integrates with websites to provide
           intelligent, context-aware customer support. By leveraging Retrieval
           Augmented Generation (RAG), it can answer questions based on a
@@ -42,13 +42,13 @@ export default function ServUPage() {
       </ProjectSection>
 
       <ProjectSection title="The Problem">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Traditional chatbots often provide generic, unhelpful responses
           because they lack access to company-specific knowledge. Meanwhile,
           customers waste time searching through documentation or waiting for
           human support agents.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           I wanted to build a solution that could understand the context of a
           user&apos;s question and retrieve relevant information from a
           company&apos;s knowledge base to provide accurate, helpful answers
@@ -57,7 +57,7 @@ export default function ServUPage() {
       </ProjectSection>
 
       <ProjectSection title="How It Works">
-        <ol className="space-y-4 text-lg text-gray-700 dark:text-gray-300 list-decimal list-inside">
+        <ol className="space-y-4 list-decimal list-inside">
           <li>
             <strong className="text-black dark:text-white">
               Knowledge Ingestion:
@@ -89,7 +89,7 @@ export default function ServUPage() {
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+        <ul className="space-y-4">
           <li>
             <strong className="text-black dark:text-white">
               Context-Aware Responses:
@@ -119,7 +119,7 @@ export default function ServUPage() {
       </ProjectSection>
 
       <ProjectSection title="Technology Stack">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Built with modern web technologies and state-of-the-art AI models,
           ServU combines a Chrome extension frontend with a powerful RAG
           backend. The system uses vector embeddings for semantic search and GPT
@@ -154,7 +154,7 @@ export default function ServUPage() {
       </ProjectSection>
 
       <ProjectSection title="Impact">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           ServU has been deployed with several pilot customers, showing a 60%
           reduction in support ticket volume and a 4.5/5 user satisfaction
           rating. The system successfully handles common questions while

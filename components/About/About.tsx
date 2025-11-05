@@ -15,7 +15,7 @@ export default function About() {
         </h1>
 
         {/* About */}
-        <div className="space-y-5 pr-0 sm:pr-8 md:pr-12 font-light text-charade dark:text-heather leading-relaxed text-sm sm:text-base w-full">
+        <div className="space-y-5 pr-0 sm:pr-8 md:pr-12 font-light text-charade dark:text-heather leading-relaxed text-sm sm:text-base lg:text-lg w-full">
           <p>
             My journey into tech has been far from traditional. I used to be in
             the corporate world, doing the Big-4 thing, but now I&apos;m all

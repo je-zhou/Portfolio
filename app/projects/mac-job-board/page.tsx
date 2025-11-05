@@ -36,7 +36,7 @@ export default function MacJobBoardPage() {
         title="Overview"
         subtitle="A dedicated job board connecting MAC students with tech opportunities"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           The MAC Job Board is a custom-built platform designed specifically for
           Monash Association of Coding (MAC), Australia&apos;s largest
           student-driven coding club. It connects students with internships,
@@ -45,13 +45,13 @@ export default function MacJobBoardPage() {
       </ProjectSection>
 
       <ProjectSection title="The Problem">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           MAC had hundreds of active members looking for tech opportunities, but
           job postings were scattered across Discord messages, email chains, and
           social media. Students were missing out on relevant opportunities, and
           partner companies weren&apos;t getting quality applicants.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           We needed a centralized platform where companies could post
           opportunities directly to MAC students, and students could easily
           discover and apply to positions that matched their skills and
@@ -60,7 +60,7 @@ export default function MacJobBoardPage() {
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+        <ul className="space-y-4">
           <li>
             <strong className="text-black dark:text-white">
               Company Portal:
@@ -102,11 +102,11 @@ export default function MacJobBoardPage() {
       </ProjectSection>
 
       <ProjectSection title="Technical Implementation">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Built with modern web technologies, the platform prioritizes
           performance and user experience:
         </p>
-        <ol className="space-y-4 text-lg text-gray-700 dark:text-gray-300 list-decimal list-inside">
+        <ol className="space-y-4 list-decimal list-inside">
           <li>
             <strong className="text-black dark:text-white">
               Server-Side Rendering:
@@ -167,13 +167,13 @@ export default function MacJobBoardPage() {
       </ProjectSection>
 
       <ProjectSection title="Impact & Results">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Since launching in early 2025, the MAC Job Board has become an
           essential resource for the MAC community. The platform has facilitated
           dozens of successful placements, connecting students with internships
           and graduate positions at leading tech companies.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           Partner companies have praised the quality of applicants and the ease
           of posting opportunities directly to a targeted audience of skilled
           students. The job board has strengthened MAC&apos;s relationships with

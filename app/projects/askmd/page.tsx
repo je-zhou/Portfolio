@@ -38,7 +38,7 @@ export default function AskMdPage() {
         title="Overview"
         subtitle="An AI-powered content management system for medical documentation that understands medical terminology and context"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           AskMd is a specialised CMS designed for healthcare professionals to
           create, manage, and search medical documentation. Built at Medhack
           2024, where it placed 4th, AskMd uses natural language processing to
@@ -48,18 +48,18 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="The Healthcare Documentation Problem">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Healthcare professionals spend countless hours on documentation, often
           using systems that don&apos;t understand medical terminology or
           context. This leads to:
         </p>
-        <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
+        <ul className="space-y-3 list-disc list-inside">
           <li>Time wasted on repetitive documentation tasks</li>
           <li>Inconsistent note formatting across providers</li>
           <li>Difficulty finding relevant patient information quickly</li>
           <li>Increased risk of documentation errors</li>
         </ul>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+        <p className="mt-6">
           During our 1-week hackathon, we aimed to create a solution that would
           streamline medical documentation while maintaining accuracy and
           compliance.
@@ -67,7 +67,7 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+        <ul className="space-y-4">
           <li>
             <strong className="text-black dark:text-white">
               Voice-to-Text Transcription:
@@ -108,11 +108,11 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="How It Works">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           AskMd leverages cutting-edge AI technologies to create a seamless
           documentation experience:
         </p>
-        <ol className="space-y-4 text-lg text-gray-700 dark:text-gray-300 list-decimal list-inside">
+        <ol className="space-y-4 list-decimal list-inside">
           <li>
             <strong className="text-black dark:text-white">
               RAG (Retrieval-Augmented Generation):
@@ -146,14 +146,14 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="Hackathon Experience">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Building AskMd over 1 week at Medhack 2024 was an intense but
           rewarding experience.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Key challenges included:
         </p>
-        <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
+        <ul className="space-y-3 list-disc list-inside">
           <li>
             Integrating RAG pipelines and vector stores within tight time
             constraints
@@ -162,7 +162,7 @@ export default function AskMdPage() {
           <li>Creating an intuitive UX for busy healthcare providers</li>
           <li>Balancing feature completeness with demo polish</li>
         </ul>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+        <p className="mt-6">
           Despite the challenges, we successfully demonstrated a working
           prototype among 100+ teams.
         </p>
@@ -204,35 +204,35 @@ export default function AskMdPage() {
             </div>
           </summary>
           <div className="mt-4 pl-4 border-l-2 border-gray-200 dark:border-gray-700 space-y-4">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               Doctors are drowning in paperwork. Searching through patient
               notes, scanning PDFs, and digging through EMRs takes valuable time
               away from patient care.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               Our solution, AskMD is an AI-powered assistant that helps doctors
               instantly find key information from past patient notes. This saves
               them time they would have spent manually combing through lots of
               information.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               Lots of hospitals still rely on a paper filing system with
               handwritten notes which is incredibly time consuming to read
               through manually. AskMD includes a document OCR system so doctors
               can pull out information from scanned documents in seconds.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               Unlike cloud-based solutions, AskMD can run fully offline. This is
               great as sensitive health information never needs to leave the
               hospital network. No internet required, no data privacy risks—just
               a seamless, AI-powered workflow. We also have the ability to run a
               cloud based solution for less strict settings.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               AskMD uses data by integrating with existing EMR systems, making
               it a simple process to onboard users.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
               We&apos;re targeting hospitals, clinics, and practitioners who
               work with lots of medical notes. Doctors shouldn&apos;t waste time
               digging through notes when we can do it for them. AskMD provides
@@ -282,13 +282,13 @@ export default function AskMdPage() {
       </ProjectSection>
 
       <ProjectSection title="Impact & Future Plans">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           The positive reception at Medhack validated the need for better
           medical documentation tools. Healthcare professionals who tested the
           prototype were particularly excited about the voice transcription and
           smart template features.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           While we didn&apos;t place in the top 3 and just barely missed out on
           the chance to pitch our idea to the judges, the experience was
           invaluable. We learned a tremendous amount about healthcare workflows,

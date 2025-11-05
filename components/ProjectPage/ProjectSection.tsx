@@ -26,11 +26,11 @@ export default function ProjectSection({
         </h2>
       )}
       {subtitle && (
-        <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+        <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
           {subtitle}
         </p>
       )}
-      <div className="text-gray-700 dark:text-gray-300 leading-relaxed">
+      <div className="text-gray-700 dark:text-gray-300 leading-relaxed [&_p]:text-sm [&_p]:sm:text-base [&_p]:lg:text-lg [&_p]:leading-relaxed [&_ul]:text-sm [&_ul]:sm:text-base [&_ul]:lg:text-lg [&_ol]:text-sm [&_ol]:sm:text-base [&_ol]:lg:text-lg">
         {children}
       </div>
     </section>

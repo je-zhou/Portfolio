@@ -32,7 +32,7 @@ export default function CourtCoveragePage() {
         title="Overview"
         subtitle="Bringing professional-grade volleyball analytics to coaches and players through computer vision"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           CourtCoverage is an AI-powered volleyball analytics system that uses
           computer vision to automatically track players, ball movement, and
           game events. The system provides coaches and players with detailed
@@ -42,14 +42,14 @@ export default function CourtCoveragePage() {
       </ProjectSection>
 
       <ProjectSection title="The Vision">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Current volleyball analytics rely heavily on manual video review and
           stat tracking, which is time-consuming and prone to human error. Even
           when stats are tracked, they often lack the spatial context and
           detailed movement patterns that coaches need to improve team
           performance.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           CourtCoverage aims to democratize access to advanced volleyball
           analytics by automatically extracting insights from game footage,
           making professional-level analysis accessible to teams at all levels.
@@ -57,7 +57,7 @@ export default function CourtCoveragePage() {
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+        <ul className="space-y-4">
           <li>
             <strong className="text-black dark:text-white">
               Player Tracking:
@@ -102,7 +102,7 @@ export default function CourtCoveragePage() {
       </ProjectSection>
 
       <ProjectSection title="Technical Approach">
-        <ol className="space-y-4 text-lg text-gray-700 dark:text-gray-300 list-decimal list-inside">
+        <ol className="space-y-4 list-decimal list-inside">
           <li>
             <strong className="text-black dark:text-white">
               Court Detection & Homography:
@@ -168,13 +168,13 @@ export default function CourtCoveragePage() {
       </ProjectSection>
 
       <ProjectSection title="Current Progress">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           The core computer vision pipeline is currently in development. Player
           detection and tracking models have been trained and tested on
           volleyball footage, with promising results. The system can reliably
           detect players and track their movement across most camera angles.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           Current development focus is on improving ball tracking accuracy in
           challenging lighting conditions and implementing the action
           recognition system for automatic event detection. The MVP will focus

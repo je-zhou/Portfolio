@@ -33,7 +33,7 @@ export default function LynkPage() {
         title="Overview"
         subtitle="Connecting students with life skills, mentors, and opportunities"
       >
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Lynk is a mobile application developed for GovHack 2022 that helps
           students adapt to life after school by connecting them with events in
           their local community to learn essential life skills like investing,
@@ -48,14 +48,14 @@ export default function LynkPage() {
       </ProjectSection>
 
       <ProjectSection title="The Challenge">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Students graduating from school often lack essential life skills that
           aren&apos;t traditionally taught in the classroom. This gap is
           particularly pronounced in rural and regional areas where access to
           practical life skills education, mentorship, and career opportunities
           is limited. Young adults face:
         </p>
-        <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
+        <ul className="space-y-3 list-disc list-inside">
           <li>Limited access to practical life skills workshops and events</li>
           <li>
             Difficulty connecting with mentors and alumni from their schools
@@ -69,7 +69,7 @@ export default function LynkPage() {
             and community events
           </li>
         </ul>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+        <p className="mt-6">
           The GovHack challenge asked teams to create innovative solutions that
           would help students transition successfully from school to independent
           life, particularly in underserved communities.
@@ -77,7 +77,7 @@ export default function LynkPage() {
       </ProjectSection>
 
       <ProjectSection title="Our Solution">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Lynk combines the best features of popular platforms into one
           comprehensive mobile app designed specifically for students
           transitioning to independent life. Drawing inspiration from Meetup for
@@ -85,7 +85,7 @@ export default function LynkPage() {
           alumni, and traditional job boards for finding opportunities, Lynk
           creates a unified platform tailored to students&apos; needs.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>
           The app prioritizes government-sponsored programs and uses
           location-based services to show relevant opportunities nearby. By
           centralizing life skills events, mentorship connections, and local job
@@ -95,7 +95,7 @@ export default function LynkPage() {
       </ProjectSection>
 
       <ProjectSection title="Key Features">
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300 mb-6">
+        <ul className="space-y-4 mb-6">
           <li>
             <strong className="text-black dark:text-white">
               Local Event Discovery:
@@ -130,7 +130,7 @@ export default function LynkPage() {
       </ProjectSection>
 
       <ProjectSection title="Hackathon Experience">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Building Lynk during GovHack 2022 was an intensive 72-hour sprint. Our
           team of developers, designers, and a community education specialist
           worked together to create a functional prototype that addressed the
@@ -140,10 +140,10 @@ export default function LynkPage() {
           src="/projects/lynk/Lynk-Experience.png"
           alt="Lynk hackathon experience"
         />
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-6">
+        <p className="mb-6 mt-6">
           Key challenges included:
         </p>
-        <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
+        <ul className="space-y-3 list-disc list-inside">
           <li>
             Integrating multiple government datasets into a coherent experience
           </li>
@@ -153,7 +153,7 @@ export default function LynkPage() {
             Creating a compelling pitch that demonstrated real community impact
           </li>
         </ul>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+        <p className="mt-6">
           Despite the time pressure, we delivered a polished prototype with core
           features working end-to-end, along with mockups showing the full
           vision for the platform.
@@ -184,14 +184,14 @@ export default function LynkPage() {
       </ProjectSection>
 
       <ProjectSection title="Impact & Recognition">
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="mb-6">
           Lynk won 1st place at GovHack 2022, recognized for its innovative
           approach to community education access and its potential for
           real-world impact. The judges praised the app&apos;s user-centric
           design, technical execution, and clear demonstration of how it would
           address the challenge brief.
         </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+        <p className="mt-6">
           Following the hackathon, we were invited to present the concept to
           government stakeholders interested in piloting similar solutions for
           community education programs. While Lynk itself remains a hackathon
