@@ -11,6 +11,7 @@ interface ProjectMediaProps {
   priority?: boolean;
   autoplay?: boolean;
   loop?: boolean;
+  isVideo?: boolean;
 }
 
 export default function ProjectMedia({
@@ -21,10 +22,13 @@ export default function ProjectMedia({
   priority = false,
   autoplay = true,
   loop = true,
+  isVideo = false,
 }: ProjectMediaProps) {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  const isVideo = /\.(mp4|mov|webm|ogg)$/i.test(src);
+  const isVideoFile = /\.(mp4|mov|webm|ogg)$/i.test(src);
+  const isYouTube = /youtube\.com|youtu\.be/i.test(src);
+  const isVideoMedia = isVideo || isVideoFile || isYouTube;
 
   const handleVideoLoaded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     setIsVideoLoaded(true);
@@ -37,7 +41,17 @@ export default function ProjectMedia({
 
   return (
     <figure className={`my-8 ${className}`}>
-      {isVideo ? (
+      {isYouTube ? (
+        <div className="relative w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-900" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            src={src}
+            title={alt}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
+      ) : isVideoFile ? (
         <div className="relative w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-900">
           {!isVideoLoaded && (
             <div className="absolute inset-0 animate-pulse bg-gray-200 dark:bg-gray-800" />
