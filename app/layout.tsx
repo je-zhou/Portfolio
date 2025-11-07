@@ -29,6 +29,43 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const CACHE_TIMEOUT = 5 * 60 * 1000; // 5 minutes
+                  const getTimeBasedTheme = () => {
+                    const currentHour = new Date().getHours();
+                    return currentHour > 17 || currentHour < 9 ? 'dark' : 'light';
+                  };
+
+                  const savedTheme = localStorage.getItem('theme');
+                  const savedTimestamp = localStorage.getItem('themeTimestamp');
+                  let theme = getTimeBasedTheme();
+
+                  if (savedTheme && savedTimestamp) {
+                    const timestamp = parseInt(savedTimestamp, 10);
+                    const now = Date.now();
+
+                    if (now - timestamp < CACHE_TIMEOUT) {
+                      theme = savedTheme;
+                    } else {
+                      localStorage.removeItem('theme');
+                      localStorage.removeItem('themeTimestamp');
+                    }
+                  }
+
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className={quicksand.className}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>

@@ -16,7 +16,7 @@ export default function Projects() {
 
           <ProjectCard
             title="Agentic Cycling Coach Mobile Application"
-            subtitle="Shipped ‣ H2 2025"
+            subtitle="Currently in Beta"
             href="/projects/wattsup"
             displayUrl="/projects/wattsup/Wattsup-Promo.mov"
           />
