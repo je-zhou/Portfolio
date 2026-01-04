@@ -35,7 +35,7 @@ export default function WiseWagersPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-Promo.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Promo.png"
           alt="WiseWagers dashboard"
           priority
         />
@@ -104,7 +104,7 @@ export default function WiseWagersPage() {
 
       <ProjectSection title="Attempt 2: JavaScript & AWS (The Glow Up)">
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-Infrastructure.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Infrastructure.png"
           alt="AWS EC2 cloud architecture"
           caption="Throwing money at AWS to make my code go brrrr"
         />
@@ -181,7 +181,7 @@ export default function WiseWagersPage() {
           websites.
         </p>
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-Discord-Bot.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Discord-Bot.png"
           alt="Discord bot notifications"
           caption="Getting pinged at 1am about betting opportunities hits different"
           className="max-w-xs mx-auto"
@@ -226,7 +226,7 @@ export default function WiseWagersPage() {
 
       <ProjectSection title="The Results (Yeah, It Actually Worked)">
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-Results.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Results.png"
           alt="Results dashboard showing profit progression"
           caption="Stonks only go up (until you get banned)"
         />
@@ -264,7 +264,7 @@ export default function WiseWagersPage() {
           </div>
         </div>
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-Portfolio.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Portfolio.png"
           alt="Performance tracking dashboard"
           caption="Tracking every bet, every hedge, every dollar—data nerd approved"
         />
@@ -278,7 +278,7 @@ export default function WiseWagersPage() {
 
       <ProjectSection title="The SaaS That Never Was">
         <ProjectMedia
-          src="/projects/wisewagers/WiseWagers-SAAS-Attempt.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-SAAS-Attempt.png"
           alt="SaaS mockup that never launched"
           caption="Almost turned this into a business... almost"
         />

@@ -35,7 +35,7 @@ export default function MacJobBoardPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/mac-job-board/MAC-Job-Board-Promo.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/mac-job-board/MAC-Job-Board-Promo.png"
           alt="MAC Job Board interface"
           priority
         />
@@ -276,7 +276,7 @@ export default function MacJobBoardPage() {
           away.
         </p>
         <ProjectMedia
-          src="/projects/mac-job-board/MAC-Job-Board-Analytics.jpg"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/mac-job-board/MAC-Job-Board-Analytics.jpg"
           alt="Launch week analytics showing 2.2k active users and 10k page views"
           caption="First week analytics: 2.2k active users, 10k page views"
         />
@@ -307,7 +307,7 @@ export default function MacJobBoardPage() {
           </div>
         </div>
         <ProjectMedia
-          src="/projects/mac-job-board/MAC-Job-Board-Presentation.jpg"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/mac-job-board/MAC-Job-Board-Presentation.jpg"
           alt="Project presentation showcasing the job board platform"
           caption="Platform overview and key features"
         />

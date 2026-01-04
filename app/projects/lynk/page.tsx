@@ -23,7 +23,7 @@ export default function LynkPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/lynk/Lynk-Promo.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/lynk/Lynk-Promo.png"
           alt="Lynk app interface"
           priority
         />
@@ -42,7 +42,7 @@ export default function LynkPage() {
           resources may be limited.
         </p>
         <ProjectMedia
-          src="/projects/lynk/Lynk-Spec.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/lynk/Lynk-Spec.png"
           alt="Lynk feature specifications"
         />
       </ProjectSection>
@@ -124,7 +124,7 @@ export default function LynkPage() {
           </li>
         </ul>
         <ProjectMedia
-          src="/projects/lynk/Lynk-Snippets.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/lynk/Lynk-Snippets.png"
           alt="Lynk app snippets"
         />
       </ProjectSection>
@@ -137,7 +137,7 @@ export default function LynkPage() {
           challenge brief.
         </p>
         <ProjectMedia
-          src="/projects/lynk/Lynk-Experience.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/lynk/Lynk-Experience.png"
           alt="Lynk hackathon experience"
         />
         <p className="mb-6 mt-6">

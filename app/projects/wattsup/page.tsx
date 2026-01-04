@@ -21,7 +21,7 @@ export default function WattsUpPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/wattsup/Wattsup-Promo.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/wattsup/Wattsup-Promo.mov"
           alt="WattsUp app demo"
           priority
         />

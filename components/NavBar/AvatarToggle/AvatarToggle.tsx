@@ -35,7 +35,7 @@ export default function AvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src={"/avatar/Moon.png"}
+                      src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Moon.png"}
                       alt="Sun"
                       width={10000}
                       height={10000}
@@ -70,7 +70,7 @@ export default function AvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src={"/avatar/Sun.png"}
+                      src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Sun.png"}
                       alt="Sun"
                       priority
                       width={10000}
@@ -78,7 +78,7 @@ export default function AvatarToggle({
                     ></Image>
                     <Image
                       className="absolute left-8 top-2.5"
-                      src={"/avatar/Cloud 1.png"}
+                      src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Cloud 1.png"}
                       alt="Sun"
                       priority
                       width={10000}
@@ -86,7 +86,7 @@ export default function AvatarToggle({
                     ></Image>
                     <Image
                       className="absolute left-1 top-5 "
-                      src={"/avatar/Cloud 2.png"}
+                      src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Cloud 2.png"}
                       alt="Sun"
                       priority
                       width={10000}
@@ -109,7 +109,7 @@ export default function AvatarToggle({
                 exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src={"/avatar/Full-Hoodie.png"}
+                  src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Full-Hoodie.png"}
                   alt="Full Hoodie"
                   priority
                   width={10000}
@@ -127,7 +127,7 @@ export default function AvatarToggle({
                 exit={{ x: -1000, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src={"/avatar/Full-Shirt.png"}
+                  src={"https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Full-Shirt.png"}
                   alt="Full Hoodie"
                   priority
                   width={10000}

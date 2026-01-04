@@ -22,7 +22,7 @@ export default function CourtCoveragePage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/courtcoverage/CourtCoverage-Promo.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/courtcoverage/CourtCoverage-Promo.mov"
           alt="CourtCoverage demo"
           priority
         />

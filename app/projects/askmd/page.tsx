@@ -28,7 +28,7 @@ export default function AskMdPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/askMd/AskMd-Promo.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/askMd/AskMd-Promo.mov"
           alt="AskMd demo"
           priority
         />
@@ -102,7 +102,7 @@ export default function AskMdPage() {
         </ul>
 
         <ProjectMedia
-          src="/projects/askMd/AskMd-Promo 2.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/askMd/AskMd-Promo 2.mov"
           alt="AskMd key features demo"
         />
       </ProjectSection>
@@ -168,14 +168,14 @@ export default function AskMdPage() {
         </p>
 
         <ProjectMedia
-          src="/projects/askMd/experience.jpg"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/askMd/experience.jpg"
           alt="AskMd hackathon experience"
         />
       </ProjectSection>
 
       <ProjectSection title="Our Pitch">
         <ProjectMedia
-          src="/projects/askMd/pitch.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/askMd/pitch.mov"
           alt="AskMd pitch video"
           autoplay={false}
           loop={false}

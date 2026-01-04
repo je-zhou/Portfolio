@@ -24,7 +24,7 @@ export default function ServUPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/servu/Servu-Promo.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/servu/Servu-Promo.mov"
           alt="ServU chatbot demo"
           priority
         />
@@ -136,7 +136,7 @@ export default function ServUPage() {
 
       <ProjectSection id="the-dashboard" title="The Dashboard (Where the Magic Happens)">
         <ProjectMedia
-          src="/projects/servu/Create Butler.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/servu/Create Butler.png"
           alt="ServU chatbot creation interface"
           caption="Creating a new chatbot butler"
         />
@@ -147,7 +147,7 @@ export default function ServUPage() {
           configure their personalities, and upload your business knowledge.
         </p>
         <ProjectMedia
-          src="/projects/servu/Train.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/servu/Train.png"
           alt="Training interface for uploading knowledge"
           caption="Upload docs, add URLs, train your bot on your actual business knowledge"
         />
@@ -158,7 +158,7 @@ export default function ServUPage() {
           relevant information when answering questions.
         </p>
         <ProjectMedia
-          src="/projects/servu/Customize.png"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/servu/Customize.png"
           alt="Customization options for chatbot appearance"
           caption="Make it match your brand"
         />

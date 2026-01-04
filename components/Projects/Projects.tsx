@@ -11,56 +11,56 @@ export default function Projects() {
             title="Volleyball Computer Vision for Analytics and Stat Tracking"
             subtitle="Under Development"
             href="/projects/courtcoverage"
-            displayUrl="/projects/courtcoverage/CourtCoverage-Promo.mov"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/courtcoverage/CourtCoverage-Promo.mov"
           />
 
           <ProjectCard
             title="Agentic Cycling Coach Mobile Application"
             subtitle="Currently in Beta"
             href="/projects/wattsup"
-            displayUrl="/projects/wattsup/Wattsup-Promo.mov"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/wattsup/Wattsup-Promo.mov"
           />
 
           <ProjectCard
             title="Job Board for Australia's Largest Student-Driven Coding Club"
             subtitle="Shipped ‣ H1 2025"
             href="/projects/mac-job-board"
-            displayUrl="/projects/mac-job-board/MAC-Job-Board-Promo.png"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/mac-job-board/MAC-Job-Board-Promo.png"
           />
 
           <ProjectCard
             title="RAG based chatbot plugin"
             subtitle="Shipped ‣ H2 2024"
             href="/projects/servu"
-            displayUrl="/projects/servu/Servu-Promo.mov"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/servu/Servu-Promo.mov"
           />
 
           <ProjectCard
             title="Foreign Exchange Algorithmic Trading Bot"
             subtitle="$80,000 AUM ‣ H2 2024"
             href="/projects/forex"
-            displayUrl="/projects/forex/Forex-Promo.mov"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Promo.mov"
           />
 
           <ProjectCard
             title="Cloud Hosted Algorithmic Sports Betting Bot"
             subtitle="$700 to $10,000+ ‣ 2023 Season"
             href="/projects/wisewagers"
-            displayUrl="/projects/wisewagers/WiseWagers-Promo.png"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/wisewagers/WiseWagers-Promo.png"
           />
 
           <ProjectCard
             title="AI Native Medical Notes CMS"
             subtitle="4th Place ‣ MedHack 2024"
             href="/projects/askmd"
-            displayUrl="/projects/askMd/AskMd-Promo.mov"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/askMd/AskMd-Promo.mov"
           />
 
           <ProjectCard
             title="Government Sponsored Community Education App"
             subtitle="1st Place ‣ GovHack 2022"
             href="/projects/lynk"
-            displayUrl="/projects/lynk/Lynk-Promo.png"
+            displayUrl="https://mtmetamherv206qj.public.blob.vercel-storage.com/lynk/Lynk-Promo.png"
           />
         </div>
       </div>

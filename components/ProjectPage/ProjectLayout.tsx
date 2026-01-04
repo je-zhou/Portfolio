@@ -48,7 +48,7 @@ export default function ProjectLayout({
         <div className="w-full px-4 pb-12 pt-20">
           <div className="mx-auto" style={{ maxWidth: "1400px" }}>
             <div className="flex justify-center gap-8">
-              <div className="w-full max-w-2xl flex-shrink-0">
+              <div className="w-full max-w-2xl shrink-0">
                 {/* Back button */}
                 <Link
                   href="/"
@@ -80,7 +80,7 @@ export default function ProjectLayout({
               </div>
               {/* Spacer to match TOC width */}
               {tableOfContents.length > 0 && (
-                <div className="hidden xl:block w-56 flex-shrink-0" />
+                <div className="hidden xl:block w-56 shrink-0" />
               )}
             </div>
           </div>
@@ -91,13 +91,13 @@ export default function ProjectLayout({
           <div className="mx-auto" style={{ maxWidth: "1400px" }}>
             <div className="flex justify-center gap-8">
               {/* Main article content - fixed width, centered */}
-              <article className="w-full max-w-2xl flex-shrink-0">
+              <article className="w-full max-w-2xl shrink-0">
                 {children}
               </article>
 
               {/* Table of contents sidebar - compact, always on the right */}
               {tableOfContents.length > 0 && (
-                <aside className="hidden xl:block w-56 flex-shrink-0">
+                <aside className="hidden xl:block w-56 shrink-0">
                   <TableOfContents items={tableOfContents} />
                 </aside>
               )}

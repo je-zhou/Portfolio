@@ -25,7 +25,7 @@ export default function ForexTradingPage() {
     >
       <ProjectSection>
         <ProjectMedia
-          src="/projects/forex/Forex-Promo.mov"
+          src="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Promo.mov"
           alt="Forex trading system dashboard"
           priority
         />
@@ -221,11 +221,11 @@ export default function ForexTradingPage() {
 
         <div className="space-y-6 mb-6">
           <ProjectMedia
-            src="/projects/forex/Forex-Backtest-Graph.png"
+            src="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Backtest-Graph.png"
             alt="5-year backtest equity curve"
           />
           <ProjectMedia
-            src="/projects/forex/Forex-Backtest-Stats.png"
+            src="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Backtest-Stats.png"
             alt="Backtest performance statistics"
           />
         </div>
@@ -281,7 +281,7 @@ export default function ForexTradingPage() {
               FTMO Account (USD 10,000)
             </h4>
             <ProjectMedia
-              src="/projects/forex/Forex-Stats-10k.png"
+              src="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Stats-10k.png"
               alt="Performance stats for 10k USD FTMO account"
             />
           </div>
@@ -291,7 +291,7 @@ export default function ForexTradingPage() {
               Live Account (AUD 65,000)
             </h4>
             <ProjectMedia
-              src="/projects/forex/Forex-Stats-65k.png"
+              src="https://mtmetamherv206qj.public.blob.vercel-storage.com/forex/Forex-Stats-65k.png"
               alt="Performance stats for 65k AUD live account"
             />
           </div>

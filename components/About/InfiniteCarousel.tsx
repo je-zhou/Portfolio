@@ -15,12 +15,12 @@ export default function InfiniteCarousel({
 
   // Images with their corresponding hashtags
   const imagesWithTags = [
-    { src: "/about-me/About Me - 1.webp", tag: "#travelling" },
-    { src: "/about-me/About Me - 2.webp", tag: "#food" },
-    { src: "/about-me/About Me - 3.webp", tag: "#fitness" },
-    { src: "/about-me/About Me - 4.webp", tag: "#cat" },
-    { src: "/about-me/About Me - 5.webp", tag: "#adventure" },
-    { src: "/about-me/About Me - 6.webp", tag: "#cycling" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 1.webp", tag: "#travelling" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 2.webp", tag: "#food" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 3.webp", tag: "#fitness" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 4.webp", tag: "#cat" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 5.webp", tag: "#adventure" },
+    { src: "https://mtmetamherv206qj.public.blob.vercel-storage.com/about-me/About Me - 6.webp", tag: "#cycling" },
   ];
 
   // Duplicate the images array to create seamless loop

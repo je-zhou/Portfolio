@@ -37,7 +37,7 @@ export default function MobileAvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src="/avatar/Moon.png"
+                      src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Moon.png"
                       alt="Moon"
                       width={10000}
                       height={10000}
@@ -76,7 +76,7 @@ export default function MobileAvatarToggle({
                   <div className="relative w-full h-full">
                     <Image
                       className="absolute"
-                      src="/avatar/Sun.png"
+                      src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Sun.png"
                       alt="Sun"
                       priority
                       width={10000}
@@ -84,7 +84,7 @@ export default function MobileAvatarToggle({
                     />
                     <Image
                       className="absolute left-6 top-2"
-                      src="/avatar/Cloud 1.png"
+                      src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Cloud 1.png"
                       alt="Cloud"
                       priority
                       width={10000}
@@ -92,7 +92,7 @@ export default function MobileAvatarToggle({
                     />
                     <Image
                       className="absolute left-0.5 top-4"
-                      src="/avatar/Cloud 2.png"
+                      src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Cloud 2.png"
                       alt="Cloud"
                       priority
                       width={10000}
@@ -115,7 +115,7 @@ export default function MobileAvatarToggle({
                 exit={{ x: -50, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src="/avatar/Full-Hoodie.png"
+                  src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Full-Hoodie.png"
                   alt="Avatar"
                   priority
                   width={10000}
@@ -133,7 +133,7 @@ export default function MobileAvatarToggle({
                 exit={{ x: -1000, opacity: 0, scale: 0, width: "0%" }}
               >
                 <Image
-                  src="/avatar/Full-Shirt.png"
+                  src="https://mtmetamherv206qj.public.blob.vercel-storage.com/avatar/Full-Shirt.png"
                   alt="Avatar"
                   priority
                   width={10000}
