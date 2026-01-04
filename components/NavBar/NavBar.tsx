@@ -30,7 +30,7 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
             className="cursor-pointer"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1-5vFRCKvpYSnCpwDvHjNeTQzvReFhd0J/view?usp=sharing"
+                "https://drive.google.com/file/d/1ZgCx3u0QVLATZp7XJNRKIc2z70F2CIkw/view?usp=sharing"
               )
             }
           >
@@ -69,11 +69,19 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
         >
           <div className="flex flex-col justify-between text-md opacity-80 h-[90vh] py-8 text-white dark:text-charade">
             <div className="space-y-8 flex flex-col">
-              <Link className="cursor-pointer" href="/about" onClick={() => setisOpen(false)}>
+              <Link
+                className="cursor-pointer"
+                href="/about"
+                onClick={() => setisOpen(false)}
+              >
                 About
               </Link>
 
-              <Link className="cursor-pointer" href="/work" onClick={() => setisOpen(false)}>
+              <Link
+                className="cursor-pointer"
+                href="/work"
+                onClick={() => setisOpen(false)}
+              >
                 Work
               </Link>
 
@@ -81,7 +89,7 @@ export default function NavBar({ toggleDarkMode, darkMode }: NavbarProps) {
                 className="cursor-pointer"
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1-5vFRCKvpYSnCpwDvHjNeTQzvReFhd0J/view?usp=sharing"
+                    "https://drive.google.com/file/d/1ZgCx3u0QVLATZp7XJNRKIc2z70F2CIkw/view?usp=sharing"
                   );
                   setisOpen(false);
                 }}
